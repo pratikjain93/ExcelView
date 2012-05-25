@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="100%" height="692" creationComplete="creationCompleteHandler()">
+<mx:Style source="assets/style.css"/>
+<mx:Script>
+	<![CDATA[
+		import com.nitishpatel.managers.DataManager;
+		
+		import mx.events.FlexEvent;
+		[Bindable]private var editTrue : Boolean = true;
+		[Bindable]private var editFalse : Boolean = false;
+		
+		
+		private var _dataManager:DataManager = DataManager.getInstance();
+		
+		protected function creationCompleteHandler():void
+		{
+			if(_dataManager.xmlData)
+			{
+				renderData();
+			}
+		}
+		
+		private function renderData():void
+		{
+			var xmlData:XMLList = _dataManager.xmlData.grower;
+			
+			c11.text = xmlData.c11;
+			d11.text = xmlData.d11;
+			
+			c16.text = xmlData.c16;
+			c17.text = xmlData.c17;
+			d16.text = xmlData.d16;
+			d17.text = xmlData.d17;
+			
+			c22.text = xmlData.c22;
+			c23.text = xmlData.c23;
+			c24.text = xmlData.c24;
+			c25.text = xmlData.c25;
+			c26.text = xmlData.c26;
+			
+			
+			d22.text = xmlData.d22;
+			d23.text = xmlData.d23;
+			d24.text = xmlData.d24;
+			d25.text = xmlData.d25;
+		}
+
+	]]>
+</mx:Script>
+	<mx:VBox x="8" y="8">
+		<mx:VBox><!--logo-->
+			<mx:HBox>
+				<mx:Image source="assets/logo.jpg" smoothBitmapContent="true"/>
+			</mx:HBox>
+		</mx:VBox>
+		<mx:VBox y="2" x="3"><!--title-->
+			<mx:HBox>
+				<mx:Label id="B6" text="Grower name" width="100"/>
+				<mx:TextInput id="C6" width="80"/>
+			</mx:HBox>
+			<mx:HBox>
+				<mx:Label id="B7" text="Prepared By" width="100"/>
+				<mx:TextInput id="C7" width="80"/>
+			</mx:HBox>
+		</mx:VBox>
+		<mx:Canvas width="321" height="120" borderColor="#020202" borderStyle="solid" borderThickness="2">
+			<mx:VBox  x="3" y="3"><!--Profit-->
+				<mx:HBox>
+					<mx:Label id="B9" text="Profit" fontWeight="bold"  width="310"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B10" text=""  width="125"/>
+					<mx:Label id="C10" text="Corn"  width="85" textAlign="center" fontWeight="bold"/>
+					<mx:Label id="D10" text="Soybeans"  width="85" textAlign="center" fontWeight="bold"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B11" text="Target Profit :" width="125" />
+					<mx:TextInput id="c11" styleName="txtbox" width="85" text="$120.00" editable="{editTrue}"/>
+					<mx:TextInput id="d11" styleName="txtbox" width="85" text="$100.00" editable="{editTrue}"/>
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle">
+					<mx:Label id="B12" text="Total Land Cost :" width="125" />
+					<mx:Text id="c12" styleName="txtTotal" width="85" text="{parseFloat(c11.text)}" />
+					<mx:Text id="d12" styleName="txtTotal" width="85" text="{parseFloat(d11.text)}"/>
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas width="321" height="145" borderColor="#020202" borderStyle="solid" borderThickness="2">
+			<mx:VBox  x="3" y="3"><!--Profit-->
+				<mx:HBox>
+					<mx:Label id="B14" text="Land Cost" fontWeight="bold"  width="310"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B15" text=""  width="125"/>
+					<mx:Label id="C15" text="Corn"  width="85" textAlign="center" fontWeight="bold"/>
+					<mx:Label id="D15" text="Soybeans"  width="85" textAlign="center" fontWeight="bold"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B16" text="Cash rent :" width="125" />
+					<mx:TextInput id="c16" styleName="txtbox" width="85" text="$120.00" />
+					<mx:TextInput id="d16" styleName="txtbox" width="85" text="$100.00" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B17" text="Owned Land :" width="125" />
+					<mx:TextInput id="c17" styleName="txtbox" width="85" text="$120.00" />
+					<mx:TextInput id="d17" styleName="txtbox" width="85" text="$100.00" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label id="B18" text="Total Land Cost :" width="125" />
+					<mx:Text id="c18" styleName="txtTotal" width="85" text="{parseFloat(c16.text) + parseFloat(c17.text)}" />
+					<mx:Text id="d18" styleName="txtTotal" width="85" text="{parseFloat(d16.text) + parseFloat(d17.text)}" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		
+		<mx:Canvas width="750" height="210" borderColor="#020202" borderStyle="solid" borderThickness="2">
+			<mx:VBox  x="3" y="3"><!--Profit-->
+				<mx:HBox>
+					<mx:Label id="B20" text="Other Cost" fontWeight="bold"  width="310"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B21" text=""  width="125"/>
+					<mx:Label id="C21" text="Corn"  width="85" textAlign="center" fontWeight="bold"/>
+					<mx:Label id="D21" text="Soybeans"  width="85" textAlign="center" fontWeight="bold"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B22" text="Crop Insurance :" width="125" />
+					<mx:TextInput id="c22" styleName="txtbox" width="85" text="$120.00" />
+					<mx:TextInput id="d22" styleName="txtbox" width="85" text="$100.00" />
+					<mx:Label id="F22" text="Estimate is for 80% Revenue on an Enterprise basis with Hail insurance" width="405"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B23" text="Drying/Bushel :" width="125" />
+					<mx:TextInput id="c23" styleName="txtbox" width="85" text="$120.00" />
+					<mx:TextInput id="d23" styleName="txtbox" width="85" text="$100.00" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B24" text="Trucking/Bushel :" width="125" />
+					<mx:TextInput id="c24" styleName="txtbox" width="85" text="$120.00" />
+					<mx:TextInput id="d24" styleName="txtbox" width="85" text="$100.00" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B25" text="Misc Cost :" width="125" />
+					<mx:TextInput id="c25" styleName="txtbox" width="85" text="$120.00" />
+					<mx:TextInput id="d25" styleName="txtbox" width="85" text="$100.00" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B26" text="Interest rate :" width="125" />
+					<mx:TextInput id="c26" styleName="txtbox" width="85" text="$120.00" />
+					<mx:Text id="D26" width="85" text="" />
+				</mx:HBox>				
+			</mx:VBox>
+		</mx:Canvas>
+	</mx:VBox>
+</mx:Canvas>

@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Style source="assets/style.css" />
+	<mx:HBox>
+		<mx:Canvas borderColor="black" borderThickness="2" borderStyle="solid">
+			<mx:VBox y="3" x="3">
+				<mx:HBox width="1308">
+					<mx:Label id="D1" text="Corn (N)itrogen Ratio" fontSize="30" fontWeight="bold" width="1008" textAlign="center" />
+					<mx:Image id="P1" x="389" y="10" source="assets/logo.jpg"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label text="Corn Price&#13;Per Bushel" width="85" id="A3"  height="31"/>
+					<mx:Label text="Bushels needed to purchase 200 Actual Units of Nitrogen" id="F3" width="1215" fontSize="20" textDecoration="underline" textAlign="center" fontWeight="bold" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A6" editable="false" text="8.40" />
+					<mx:TextInput width="60" id="B6" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="C6" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="D6" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="E6" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="F6" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="G6" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="H6" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I6" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J6" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K6" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L6" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M6" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N6" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O6" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P6" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q6" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R6" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S6" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A6.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A7" editable="false" text="8.20" />
+					<mx:TextInput width="60" id="B7" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="C7" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="D7" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="E7" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="F7" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="G7" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="H7" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I7" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J7" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K7" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L7" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M7" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N7" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O7" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P7" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q7" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R7" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S7" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A7.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A8" editable="false" text="8.00" />
+					<mx:TextInput width="60" id="B8" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="C8" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="D8" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="E8" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="F8" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="G8" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="H8" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I8" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J8" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K8" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L8" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M8" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N8" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O8" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P8" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q8" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R8" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S8" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A8.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A9" editable="false" text="7.80" />
+					<mx:TextInput width="60" id="B9" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="C9" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="D9" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="E9" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="F9" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="G9" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="H9" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I9" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J9" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K9" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L9" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M9" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N9" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O9" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P9" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q9" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R9" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S9" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A9.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A10" editable="false" text="7.60" />
+					<mx:TextInput width="60" id="B10" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A10.text)}" />
+					<mx:TextInput width="60" id="C10" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="D10" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="E10" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="F10" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="G10" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="H10" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I10" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J10" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K10" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L10" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M10" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N10" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O10" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P10" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q10" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R10" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A10.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S10" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A10.text)}" styleName="ratio"  />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A11" editable="false" text="7.40" />
+					<mx:TextInput width="60" id="B11" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A11.text)}" />
+					<mx:TextInput width="60" id="C11" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A11.text)}" />
+					<mx:TextInput width="60" id="D11" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="E11" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="F11" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="G11" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="H11" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I11" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J11" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K11" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L11" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M11" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N11" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O11" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P11" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q11" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R11" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S11" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A11.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A12" editable="false" text="7.20" />
+					<mx:TextInput width="60" id="B12" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A12.text)}" />
+					<mx:TextInput width="60" id="C12" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A12.text)}" />
+					<mx:TextInput width="60" id="D12" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="E12" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="F12" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="G12" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="H12" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I12" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J12" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K12" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L12" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M12" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N12" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O12" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P12" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q12" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R12" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S12" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A12.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A13" editable="false" text="7.00" />
+					<mx:TextInput width="60" id="B13" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A13.text)}" />
+					<mx:TextInput width="60" id="C13" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A13.text)}" />
+					<mx:TextInput width="60" id="D13" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A13.text)}" />
+					<mx:TextInput width="60" id="E13" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="F13" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="G13" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="H13" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I13" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J13" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K13" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L13" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M13" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N13" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O13" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P13" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q13" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R13" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S13" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A13.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A14" editable="false" text="6.80" />
+					<mx:TextInput width="60" id="B14" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A14.text)}" />
+					<mx:TextInput width="60" id="C14" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A14.text)}" />
+					<mx:TextInput width="60" id="D14" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A14.text)}" />
+					<mx:TextInput width="60" id="E14" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="F14" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="G14" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="H14" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I14" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J14" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K14" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L14" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M14" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N14" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O14" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P14" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q14" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R14" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S14" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A14.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A15" editable="false" text="6.60" />
+					<mx:TextInput width="60" id="B15" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A15.text)}" />
+					<mx:TextInput width="60" id="C15" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A15.text)}" />
+					<mx:TextInput width="60" id="D15" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A15.text)}" />
+					<mx:TextInput width="60" id="E15" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A15.text)}" />
+					<mx:TextInput width="60" id="F15" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="G15" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="H15" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I15" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J15" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K15" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L15" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M15" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N15" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O15" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P15" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q15" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R15" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S15" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A15.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A16" editable="false" text="6.40" />
+					<mx:TextInput width="60" id="B16" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A16.text)}" />
+					<mx:TextInput width="60" id="C16" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A16.text)}" />
+					<mx:TextInput width="60" id="D16" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A16.text)}" />
+					<mx:TextInput width="60" id="E16" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A16.text)}" />
+					<mx:TextInput width="60" id="F16" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A16.text)}" />
+					<mx:TextInput width="60" id="G16" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="H16" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I16" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J16" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K16" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L16" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M16" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N16" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O16" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P16" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q16" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R16" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S16" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A16.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A17" editable="false" text="6.20" />
+					<mx:TextInput width="60" id="B17" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A17.text)}" />
+					<mx:TextInput width="60" id="C17" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A17.text)}" />
+					<mx:TextInput width="60" id="D17" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A17.text)}" />
+					<mx:TextInput width="60" id="E17" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A17.text)}" />
+					<mx:TextInput width="60" id="F17" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A17.text)}" />
+					<mx:TextInput width="60" id="G17" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="H17" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I17" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J17" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K17" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L17" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M17" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N17" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O17" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P17" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q17" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R17" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S17" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A17.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A18" editable="false" text="6.00" />
+					<mx:TextInput width="60" id="B18" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A18.text)}" />
+					<mx:TextInput width="60" id="C18" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A18.text)}" />
+					<mx:TextInput width="60" id="D18" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A18.text)}" />
+					<mx:TextInput width="60" id="E18" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A18.text)}" />
+					<mx:TextInput width="60" id="F18" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A18.text)}" />
+					<mx:TextInput width="60" id="G18" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A18.text)}" />
+					<mx:TextInput width="60" id="H18" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A18.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I18" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A18.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J18" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A18.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K18" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A18.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L18" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A18.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M18" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A18.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N18" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A18.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O18" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A18.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P18" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A18.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q18" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A18.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R18" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A18.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S18" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A18.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A19" editable="false" text="5.80" />
+					<mx:TextInput width="60" id="B19" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A19.text)}" />
+					<mx:TextInput width="60" id="C19" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A19.text)}" />
+					<mx:TextInput width="60" id="D19" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A19.text)}" />
+					<mx:TextInput width="60" id="E19" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A19.text)}" />
+					<mx:TextInput width="60" id="F19" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A19.text)}" />
+					<mx:TextInput width="60" id="G19" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A19.text)}" />
+					<mx:TextInput width="60" id="H19" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A19.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="I19" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A19.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J19" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A19.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K19" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A19.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L19" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A19.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M19" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A19.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N19" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A19.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O19" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A19.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P19" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A19.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q19" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A19.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R19" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A19.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S19" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A19.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A20" editable="false" text="5.60" />
+					<mx:TextInput width="60" id="B20" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A20.text)}" />
+					<mx:TextInput width="60" id="C20" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A20.text)}" />
+					<mx:TextInput width="60" id="D20" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A20.text)}" />
+					<mx:TextInput width="60" id="E20" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A20.text)}" />
+					<mx:TextInput width="60" id="F20" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A20.text)}" />
+					<mx:TextInput width="60" id="G20" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A20.text)}" />
+					<mx:TextInput width="60" id="H20" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A20.text)}" />
+					<mx:TextInput width="60" id="I20" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A20.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="J20" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A20.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K20" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A20.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L20" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A20.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M20" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A20.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N20" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A20.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O20" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A20.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P20" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A20.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q20" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A20.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R20" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A20.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S20" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A20.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A21" editable="false" text="5.40" />
+					<mx:TextInput width="60" id="B21" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A21.text)}" />
+					<mx:TextInput width="60" id="C21" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A21.text)}" />
+					<mx:TextInput width="60" id="D21" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A21.text)}" />
+					<mx:TextInput width="60" id="E21" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A21.text)}" />
+					<mx:TextInput width="60" id="F21" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A21.text)}" />
+					<mx:TextInput width="60" id="G21" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A21.text)}" />
+					<mx:TextInput width="60" id="H21" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A21.text)}" />
+					<mx:TextInput width="60" id="I21" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A21.text)}" />
+					<mx:TextInput width="60" id="J21" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A21.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K21" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A21.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L21" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A21.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M21" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A21.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N21" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A21.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O21" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A21.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P21" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A21.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q21" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A21.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R21" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A21.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S21" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A21.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A22" editable="false" text="5.20" />
+					<mx:TextInput width="60" id="B22" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A22.text)}" />
+					<mx:TextInput width="60" id="C22" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A22.text)}" />
+					<mx:TextInput width="60" id="D22" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A22.text)}" />
+					<mx:TextInput width="60" id="E22" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A22.text)}" />
+					<mx:TextInput width="60" id="F22" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A22.text)}" />
+					<mx:TextInput width="60" id="G22" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A22.text)}" />
+					<mx:TextInput width="60" id="H22" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A22.text)}" />
+					<mx:TextInput width="60" id="I22" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A22.text)}" />
+					<mx:TextInput width="60" id="J22" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A22.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="K22" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A22.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L22" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A22.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M22" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A22.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N22" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A22.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O22" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A22.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P22" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A22.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q22" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A22.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R22" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A22.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S22" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A22.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A23" editable="false" text="5.00" />
+					<mx:TextInput width="60" id="B23" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A23.text)}" />
+					<mx:TextInput width="60" id="C23" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A23.text)}" />
+					<mx:TextInput width="60" id="D23" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A23.text)}" />
+					<mx:TextInput width="60" id="E23" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A23.text)}" />
+					<mx:TextInput width="60" id="F23" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A23.text)}" />
+					<mx:TextInput width="60" id="G23" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A23.text)}" />
+					<mx:TextInput width="60" id="H23" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A23.text)}" />
+					<mx:TextInput width="60" id="I23" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A23.text)}" />
+					<mx:TextInput width="60" id="J23" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A23.text)}" />
+					<mx:TextInput width="60" id="K23" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A23.text)}"  styleName="ratio"/>
+					<mx:TextInput width="60" id="L23" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A23.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M23" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A23.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N23" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A23.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O23" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A23.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P23" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A23.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q23" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A23.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R23" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A23.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S23" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A23.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A24" editable="false" text="4.80" />
+					<mx:TextInput width="60" id="B24" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A24.text)}" />
+					<mx:TextInput width="60" id="C24" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A24.text)}" />
+					<mx:TextInput width="60" id="D24" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A24.text)}" />
+					<mx:TextInput width="60" id="E24" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A24.text)}" />
+					<mx:TextInput width="60" id="F24" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A24.text)}" />
+					<mx:TextInput width="60" id="G24" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A24.text)}" />
+					<mx:TextInput width="60" id="H24" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A24.text)}" />
+					<mx:TextInput width="60" id="I24" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A24.text)}" />
+					<mx:TextInput width="60" id="J24" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A24.text)}" />
+					<mx:TextInput width="60" id="K24" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A24.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="L24" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A24.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M24" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A24.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N24" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A24.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O24" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A24.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P24" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A24.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q24" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A24.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R24" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A24.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S24" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A24.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A25" editable="false" text="4.60" />
+					<mx:TextInput width="60" id="B25" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A25.text)}" />
+					<mx:TextInput width="60" id="C25" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A25.text)}" />
+					<mx:TextInput width="60" id="D25" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A25.text)}" />
+					<mx:TextInput width="60" id="E25" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A25.text)}" />
+					<mx:TextInput width="60" id="F25" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A25.text)}" />
+					<mx:TextInput width="60" id="G25" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A25.text)}" />
+					<mx:TextInput width="60" id="H25" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A25.text)}" />
+					<mx:TextInput width="60" id="I25" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A25.text)}" />
+					<mx:TextInput width="60" id="J25" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A25.text)}" />
+					<mx:TextInput width="60" id="K25" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A25.text)}" />
+					<mx:TextInput width="60" id="L25" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A25.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="M25" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A25.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N25" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A25.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O25" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A25.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P25" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A25.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q25" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A25.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R25" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A25.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S25" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A25.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A26" editable="false" text="4.40" />
+					<mx:TextInput width="60" id="B26" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A26.text)}" />
+					<mx:TextInput width="60" id="C26" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A26.text)}" />
+					<mx:TextInput width="60" id="D26" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A26.text)}" />
+					<mx:TextInput width="60" id="E26" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A26.text)}" />
+					<mx:TextInput width="60" id="F26" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A26.text)}" />
+					<mx:TextInput width="60" id="G26" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A26.text)}" />
+					<mx:TextInput width="60" id="H26" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A26.text)}" />
+					<mx:TextInput width="60" id="I26" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A26.text)}" />
+					<mx:TextInput width="60" id="J26" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A26.text)}" />
+					<mx:TextInput width="60" id="K26" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A26.text)}" />
+					<mx:TextInput width="60" id="L26" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A26.text)}" />
+					<mx:TextInput width="60" id="M26" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A26.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N26" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A26.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O26" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A26.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P26" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A26.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q26" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A26.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R26" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A26.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S26" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A26.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A27" editable="false" text="4.20" />
+					<mx:TextInput width="60" id="B27" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A27.text)}" />
+					<mx:TextInput width="60" id="C27" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A27.text)}" />
+					<mx:TextInput width="60" id="D27" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A27.text)}" />
+					<mx:TextInput width="60" id="E27" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A27.text)}" />
+					<mx:TextInput width="60" id="F27" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A27.text)}" />
+					<mx:TextInput width="60" id="G27" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A27.text)}" />
+					<mx:TextInput width="60" id="H27" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A27.text)}" />
+					<mx:TextInput width="60" id="I27" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A27.text)}" />
+					<mx:TextInput width="60" id="J27" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A27.text)}" />
+					<mx:TextInput width="60" id="K27" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A27.text)}" />
+					<mx:TextInput width="60" id="L27" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A27.text)}" />
+					<mx:TextInput width="60" id="M27" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A27.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="N27" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A27.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O27" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A27.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P27" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A27.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q27" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A27.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R27" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A27.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S27" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A27.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A28" editable="false" text="4.00" />
+					<mx:TextInput width="60" id="B28" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A28.text)}" />
+					<mx:TextInput width="60" id="C28" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A28.text)}" />
+					<mx:TextInput width="60" id="D28" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A28.text)}" />
+					<mx:TextInput width="60" id="E28" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A28.text)}" />
+					<mx:TextInput width="60" id="F28" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A28.text)}" />
+					<mx:TextInput width="60" id="G28" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A28.text)}" />
+					<mx:TextInput width="60" id="H28" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A28.text)}" />
+					<mx:TextInput width="60" id="I28" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A28.text)}" />
+					<mx:TextInput width="60" id="J28" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A28.text)}" />
+					<mx:TextInput width="60" id="K28" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A28.text)}" />
+					<mx:TextInput width="60" id="L28" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A28.text)}" />
+					<mx:TextInput width="60" id="M28" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A28.text)}" />
+					<mx:TextInput width="60" id="N28" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A28.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O28" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A28.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P28" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A28.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q28" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A28.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R28" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A28.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S28" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A28.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A29" editable="false" text="3.80" />
+					<mx:TextInput width="60" id="B29" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A29.text)}" />
+					<mx:TextInput width="60" id="C29" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A29.text)}" />
+					<mx:TextInput width="60" id="D29" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A29.text)}" />
+					<mx:TextInput width="60" id="E29" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A29.text)}" />
+					<mx:TextInput width="60" id="F29" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A29.text)}" />
+					<mx:TextInput width="60" id="G29" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A29.text)}" />
+					<mx:TextInput width="60" id="H29" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A29.text)}" />
+					<mx:TextInput width="60" id="I29" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A29.text)}" />
+					<mx:TextInput width="60" id="J29" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A29.text)}" />
+					<mx:TextInput width="60" id="K29" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A29.text)}" />
+					<mx:TextInput width="60" id="L29" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A29.text)}" />
+					<mx:TextInput width="60" id="M29" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A29.text)}" />
+					<mx:TextInput width="60" id="N29" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A29.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="O29" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A29.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P29" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A29.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q29" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A29.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R29" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A29.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S29" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A29.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A30" editable="false" text="3.60" />
+					<mx:TextInput width="60" id="B30" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="C30" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="D30" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="E30" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="F30" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="G30" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="H30" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="I30" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="J30" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="K30" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="L30" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="M30" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="N30" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A30.text)}" />
+					<mx:TextInput width="60" id="O30" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A30.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P30" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A30.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q30" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A30.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R30" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A30.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S30" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A30.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A31" editable="false" text="3.40" />
+					<mx:TextInput width="60" id="B31" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="C31" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="D31" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="E31" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="F31" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="G31" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="H31" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="I31" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="J31" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="K31" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="L31" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="M31" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="N31" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A31.text)}" />
+					<mx:TextInput width="60" id="O31" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A31.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="P31" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A31.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q31" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A31.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R31" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A31.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S31" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A31.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A32" editable="false" text="3.20" />
+					<mx:TextInput width="60" id="B32" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="C32" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="D32" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="E32" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="F32" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="G32" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="H32" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="I32" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="J32" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="K32" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="L32" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="M32" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="N32" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="O32" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A32.text)}" />
+					<mx:TextInput width="60" id="P32" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A32.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="Q32" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A32.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R32" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A32.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S32" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A32.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A33" editable="false" text="3.00" />
+					<mx:TextInput width="60" id="B33" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="C33" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="D33" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="E33" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="F33" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="G33" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="H33" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="I33" editable="false" text="{parseFloat(U39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="J33" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="K33" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="L33" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="M33" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="N33" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="O33" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="P33" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A33.text)}" />
+					<mx:TextInput width="60" id="Q33" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A33.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R33" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A33.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S33" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A33.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A34" editable="false" text="2.80" />
+					<mx:TextInput width="60" id="B34" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="C34" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="D34" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="E34" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="F34" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="G34" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="H34" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="I34" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="J34" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="K34" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="L34" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="M34" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="N34" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="O34" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="P34" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A34.text)}" />
+					<mx:TextInput width="60" id="Q34" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A34.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="R34" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A34.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S34" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A34.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A35" editable="false" text="2.60" />
+					<mx:TextInput width="60" id="B35" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="C35" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="D35" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="E35" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="F35" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="G35" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="H35" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="I35" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="J35" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="K35" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="L35" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="M35" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="N35" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="O35" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="P35" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="Q35" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A35.text)}" />
+					<mx:TextInput width="60" id="R35" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A35.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S35" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A35.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A36" editable="false" text="2.40" />
+					<mx:TextInput width="60" id="B36" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="C36" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="D36" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="E36" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="F36" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="G36" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="H36" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="I36" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="J36" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="K36" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="L36" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="M36" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="N36" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="O36" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="P36" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="Q36" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A36.text)}" />
+					<mx:TextInput width="60" id="R36" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A36.text)}" styleName="ratio" />
+					<mx:TextInput width="60" id="S36" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A36.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A37" editable="false" text="2.20" />
+					<mx:TextInput width="60" id="B37" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="C37" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="D37" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="E37" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="F37" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="G37" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="H37" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="I37" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="J37" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="K37" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="L37" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="M37" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="N37" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="O37" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="P37" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="Q37" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="R37" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A37.text)}" />
+					<mx:TextInput width="60" id="S37" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A37.text)}" styleName="ratio" />				
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A38" editable="false" text="2.00" />
+					<mx:TextInput width="60" id="B38" editable="false" text="{parseFloat(B39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="C38" editable="false" text="{parseFloat(C39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="D38" editable="false" text="{parseFloat(D39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="E38" editable="false" text="{parseFloat(E39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="F38" editable="false" text="{parseFloat(F39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="G38" editable="false" text="{parseFloat(G39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="H38" editable="false" text="{parseFloat(H39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="I38" editable="false" text="{parseFloat(I39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="J38" editable="false" text="{parseFloat(J39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="K38" editable="false" text="{parseFloat(K39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="L38" editable="false" text="{parseFloat(L39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="M38" editable="false" text="{parseFloat(M39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="N38" editable="false" text="{parseFloat(N39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="O38" editable="false" text="{parseFloat(O39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="P38" editable="false" text="{parseFloat(P39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="Q38" editable="false" text="{parseFloat(Q39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="R38" editable="false" text="{parseFloat(R39.text)/8.2/parseFloat(A38.text)}" />
+					<mx:TextInput width="60" id="S38" editable="false" text="{parseFloat(S39.text)/8.2/parseFloat(A38.text)}" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:TextInput width="85" id="A39" editable="false" text="NH3 Price/Ton" />
+					<mx:TextInput width="60" id="B39" editable="true" text="1150" />
+					<mx:TextInput width="60" id="C39" editable="true" text="1100" />
+					<mx:TextInput width="60" id="D39" editable="true" text="1050" />
+					<mx:TextInput width="60" id="E39" editable="true" text="1000" />
+					<mx:TextInput width="60" id="F39" editable="true" text="950" />
+					<mx:TextInput width="60" id="G39" editable="true" text="900" />
+					<mx:TextInput width="60" id="H39" editable="true" text="850" />
+					<mx:TextInput width="60" id="I39" editable="true" text="800" />
+					<mx:TextInput width="60" id="J39" editable="true" text="750" />
+					<mx:TextInput width="60" id="K39" editable="true" text="700" />
+					<mx:TextInput width="60" id="L39" editable="true" text="650" />
+					<mx:TextInput width="60" id="M39" editable="true" text="600" />
+					<mx:TextInput width="60" id="N39" editable="true" text="550" />
+					<mx:TextInput width="60" id="O39" editable="true" text="500" />
+					<mx:TextInput width="60" id="P39" editable="true" text="450" />
+					<mx:TextInput width="60" id="Q39" editable="true" text="400" />
+					<mx:TextInput width="60" id="R39" editable="true" text="350" />
+					<mx:TextInput width="60" id="S39" editable="true" text="300" />				
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderColor="black" borderThickness="2" borderStyle="solid">
+			<mx:VBox>
+				<mx:HBox>
+					<mx:Label id="V1" text="Corn (N)itrogen Ratio" fontSize="30" fontWeight="bold" width="200" textAlign="center" />
+					<mx:Image id="AA1" x="389" y="10" source="assets/logo.png"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U3" text="Time of Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W3" text="Season" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="Y3" text="NH3 Price" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="AA3" text="Corn Price" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="AC3" text="Corn / NH3 Ratio" width="150" height="35" textDecoration="underline" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U5" text="Summer 2005&#13;First Fall Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W5" text="Fall 2005" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y5" text="$ 456.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA5" text="$2.36 Dec '05 CBOT&#13;Price as of 7-1-05" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC5" text="23.5" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U7" text="Fall 2005&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W7" text="Fall 2005&#13;In-Season" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y7" text="$ 500.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA7" text="$1.89 Dec'05 CBOT&#13;Price as of 12-1-05" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC7" text="32.0" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U9" text="Dec 2005 / Jan 2006&#13;First Spring Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W9" text="Spring 2006&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y9" text="$ 557.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA9" text="$2.52 Dec '06 CBOT&#13;Price as of 1-2-06" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC9" text="27.0" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U11" text="Spring 2006&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W11" text="Spring 2006&#13;In-Season" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y11" text="$ 556.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA11" text="$2.68 Dec '06 CBOT&#13;Price as of 4-1-06" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC11" text="25.3" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U13" text="Summer 2006&#13;First Fall Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W13" text="Fall 2006&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y13" text="$ 438.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA13" text="$2.69 Dec '06 CBOT&#13;Price as of 7-1-06" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC13" text="19.9" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U15" text="Fall 2006&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W15" text="Fall 2006&#13;In-Season" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y15" text="$ 446.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA15" text="$3.74 Dec '06 CBOT&#13;Price as of 12-1-06" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC15" text="14.5" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U17" text="Dec 2006 / Jan 2007&#13;First Spring Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W17" text="Spring 2007&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y17" text="$ 457.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA17" text="$3.62 Dec '07 CBOT&#13;Price as of 1-2-07 " width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC17" text="15.4" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U19" text="Spring 2007&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W19" text="Spring 2007&#13;In-Season" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y19" text="$ 549.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA19" text="$3.70 Dec '07 CBOT&#13;Price as of 4-1-07" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC19" text="18.1" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U21" text="Summer 2007&#13;First Fall Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W21" text="Fall 2007&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y21" text="$ 528.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA21" text="$3.50 Dec'07 CBOT&#13;Price as of 7-1-07" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC21" text="18.4" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U23" text="Fall 2007&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W23" text="Fall 2007&#13;In-Season" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y23" text="$ 568.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA23" text="$3.86 Dec '07 CBOT&#13;Price as of 12-1-07" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC23" text="18.0" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U25" text="Dec 2007 / Jan 2008&#13;First Spring Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W25" text="Spring 2008&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y25" text="$ 658.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA25" text="$4.80 Dec '08 CBOT&#13;Price as of 1-2-08 " width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC25" text="16.7" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U27" text="Spring 2008&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W27" text="Spring 2008&#13;In-Season" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y27" text="$ 760.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA27" text="$5.93 Dec '08 CBOT&#13;Price as of 4-1-08" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC27" text="15.6" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U29" text="Summer 2008&#13;First Fall Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W29" text="Fall 2008&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y29" text="$ 950.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA29" text="$7.52 Dec'08 CBOT&#13;Price as of 7-1-08" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC29" text="15.4" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U31" text="Fall 2008&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W31" text="Fall 2008&#13;In-Season" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y31" text="$ 1056.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA31" text="$3.33 Dec '08 CBOT&#13;Price as of 12-1-08" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC31" text="38.7" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U33" text="Dec 2008 / Jan 2009&#13;First Spring Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W33" text="Spring 2009&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y33" text="$ 678.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA33" text="$4.56 Dec '09 CBOT&#13;Price as of 1-2-09 " width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC33" text="18.1" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U35" text="Spring 2009&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W35" text="Spring 2009&#13;In-Season" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y35" text="$ 670.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA35" text="$4.27 Dec '09 CBOT&#13;Price as of 4-1-09" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC35" text="19.1" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U37" text="Summer 2009&#13;First Fall Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W37" text="Fall 2009&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y37" text="$ 440.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA37" text="$4.50 Dec'09 CBOT&#13;Price as of 5-28-09" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC37" text="11.9" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U39" text="Dec 2009 / Jan 2010&#13;First Spring Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W39" text="Spring 2010&#13;In-Season" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y39" text="$ 518.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA39" text="$4.45 Dec '10 CBOT&#13;Price as of 1-4-10" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC39" text="14.2" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U41" text="Summer 2010&#13;First Fall Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W41" text="Fall 2010&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y41" text="$ 570.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA41" text="$4.40 Dec'11 CBOT&#13;Price as of 8-1-10" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC41" text="15.8" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U43" text="Fall 2010&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W43" text="Fall 2010&#13;In-Season" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y43" text="$ 700.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA43" text="$5.53 Dec '10 CBOT&#13;Price as of 12-1-10" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC43" text="15.5" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U45" text="Dec 2010 / Jan 2011&#13;First Spring Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W45" text="Spring 2011&#13;In-Season" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y45" text="$ 770.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA45" text="$5.53 Dec '11 CBOT&#13;Price as of 1-3-11" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC45" text="17.0" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U47" text="Summer 2011&#13;First Fall Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W47" text="Fall 2011&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y47" text="$ 820.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA47" text="$5.96 Dec'12 CBOT&#13;Price as of 5-18-12" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC47" text="16.8" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U49" text="Winter 2012&#13;Spring Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W49" text="Spring 2012&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y49" text="$ 830.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA49" text="$5.59 Dec'12 CBOT&#13;Price as of 1-1-12" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC49" text="18.1" width="150" height="35" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="U51" text="Winter 2012&#13;Spring Prepay Offer" width="150" height="35" textDecoration="underline" />
+					<mx:Label id="W51" text="Fall 2012&#13;" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="Y51" text="$ 715.00" width="150" height="35" editable="false" />
+					<mx:Label id="AA51" text="$5.51 Dec'13 CBOT&#13;Price as of 2-16-12" width="150" height="35" textDecoration="underline" />
+					<mx:TextInput id="AC51" text="15.8" width="150" height="35" editable="false" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+	</mx:HBox>
+</mx:Canvas>

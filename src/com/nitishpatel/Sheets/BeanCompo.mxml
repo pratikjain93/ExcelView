@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" height="1242">
+	<mx:VBox>
+		<mx:HBox x="10" y="11">
+			<mx:VBox>
+				<mx:Canvas borderColor="black" borderThickness="2" borderStyle="solid" width="224" height="180">
+					<mx:VBox y="3" x="3">
+						<mx:HBox>
+							<mx:Label text="Grower" fontWeight="bold" id="A2" width="125" />
+							<mx:TextInput fontWeight="bold" id="B2" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Prepared By" fontWeight="bold" id="A3" width="125" />
+							<mx:TextInput fontWeight="bold" id="B3" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Crop Year" fontWeight="bold" id="A4" width="125" />
+							<mx:Label text="2012" fontWeight="bold" id="B4" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="" fontWeight="bold" id="A5" width="125" />
+							<mx:Label text="Beans" fontWeight="bold" id="B5" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Yield Goal" fontWeight="bold" id="A6" width="125" />
+							<mx:Label text="50" fontWeight="bold" id="B6" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Cash Price" fontWeight="bold" id="A7" width="125" />
+							<mx:Label text="12.43" fontWeight="bold" id="B7" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Total Revenge" fontWeight="bold" id="A8" width="125" />
+							<mx:Label text="621.50" fontWeight="bold" id="B8" width="80" />
+						</mx:HBox>
+					</mx:VBox>
+				</mx:Canvas>
+				<mx:Canvas borderColor="black" borderThickness="2" borderStyle="solid"  width="224" height="207">
+					<mx:VBox y="3" x="3">
+						<mx:HBox>
+							<mx:Label text="Seed Cost  :" id="A10" width="125" />
+							<mx:TextInput editable="false" text="126.00" id="B10" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="N Cost :" id="A11" width="125" />
+							<mx:TextInput editable="false" text="106.05" id="B11" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="N Stabilizer Cost :" id="A12" width="125" />
+							<mx:TextInput editable="false" text="12.13" id="B12" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Plant Food Cost :" id="A13" width="125" />
+							<mx:TextInput editable="false" text="143.75" id="B13" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Crop Protection :" id="A14" width="125" />
+							<mx:TextInput editable="false" text="61.00" id="B14" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Custom Service :" id="A15" width="125" />
+							<mx:TextInput editable="false" text="42.50" id="B15" width="80" />
+						</mx:HBox>
+						<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle">
+							<mx:Label text="Total Supplier Cost :" id="A16" width="125" />
+							<mx:TextInput editable="false" text="491.42"  id="B16" width="80" />
+						</mx:HBox>
+					</mx:VBox>
+				</mx:Canvas>
+				<mx:Canvas borderColor="black" borderThickness="2" borderStyle="solid" width="224" height="346">
+					<mx:VBox y="3" x="3">
+						<mx:HBox>
+							<mx:Label text="Insurance :" id="A18" width="125" />
+							<mx:TextInput editable="false" text="33.00" id="B18" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Misc. Cost :" id="A19" width="125" />
+							<mx:TextInput editable="false" text="- " id="B19" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Total Variable :" id="A20" width="125" />
+							<mx:TextInput editable="false" text="524.42" id="B20" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Interest :" id="A21" width="125" />
+							<mx:TextInput editable="false" text="23.60" id="B21" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Machinery Cost :" id="A22" width="125" />
+							<mx:TextInput editable="false" text=" 56.30" id="B22" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Drying :" id="A23" width="125" />
+							<mx:TextInput editable="false" text="28.50" id="B23" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Trucking :" id="A24" width="125" />
+							<mx:TextInput editable="false" text="28.50"  id="B24" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Non Land Cost :" id="A25" width="125" />
+							<mx:TextInput editable="false" text="208.96" id="B25" width="80" />
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Land Cost :" id="A26" width="125" />
+							<mx:TextInput editable="false" text="235.00" id="B26" width="80" />
+						</mx:HBox>
+						<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle">
+							<mx:Label text="Total Expense :" id="A27" width="125" fontWeight="bold" />
+							<mx:TextInput editable="false" text="896.23"  id="B27" width="80" fontWeight="bold" />
+						</mx:HBox>
+						<mx:HBox>
+							
+						</mx:HBox>
+						<mx:HBox>
+							<mx:Label text="Net Income :" id="A29" width="125" fontWeight="bold" />
+							<mx:TextInput editable="false" text="135.38"  id="B29" width="80" fontWeight="bold" />
+						</mx:HBox>
+					</mx:VBox>
+				</mx:Canvas>
+			</mx:VBox>
+			<mx:VBox>
+				<mx:HBox>
+					<mx:Image source="assets/logo.jpg"/>
+					<mx:Image source="assets/logo-2.png"/>
+					<mx:Image source="assets/logo-3.png"/>
+				</mx:HBox>
+				<mx:VBox>
+					<mx:Canvas borderColor="black" borderThickness="2" borderStyle="solid">
+						<mx:VBox y="3" x="3">
+							<mx:HBox>
+								<mx:Label text="Breakeven" fontWeight="bold" id="D6" width="200" />
+							</mx:HBox>
+							<mx:HBox>
+								<mx:Label text="Yield" fontWeight="bold" id="D8" width="85" />
+								<mx:Label text="Revenue" fontWeight="bold" id="E8" width="85" />
+								<mx:Label text="Non Land" fontWeight="bold" id="F8" width="85" />
+								<mx:Label text="Land" fontWeight="bold" id="G8" width="85" />
+								<mx:Label text="Additional Drying" fontWeight="bold" id="H8" width="104" />
+								<mx:Label text="Additional Trucking" fontWeight="bold" id="I8" width="114" />
+								<mx:Label text="Total Cost" fontWeight="bold" id="J8" width="85" />
+								<mx:Label text="Net" fontWeight="bold" id="K8" width="85" />
+								<mx:Label text="Breakeven" fontWeight="bold" id="L8" width="85" />
+							</mx:HBox>
+							<mx:HBox>
+								<mx:TextInput text="{B6.text}" editable="false" id="D9" width="85" />
+								<mx:TextInput text="621.50" editable="false" id="E9" width="85" />
+								<mx:TextInput text="{B25.text}" editable="false" id="F9" width="85" />
+								<mx:TextInput text="{B26.text}" editable="false" id="G9" width="85" />
+								<mx:TextInput text="0" editable="false" id="H9" width="104" />
+								<mx:TextInput text="0" editable="false" id="I9" width="114" />
+								<mx:TextInput text="{parseFloat(F9.text)+parseFloat(G9.text)+parseFloat(H9.text)+parseFloat(I9.text)}" editable="false" id="J9" width="85" />
+								<mx:TextInput text="{parseFloat(E9.text)-parseFloat(F9.text)-parseFloat(G9.text)-parseFloat(H9.text)-parseFloat(I9.text)}" editable="false" id="K9" width="85" />
+								<mx:TextInput text="{parseFloat(J9.text)/parseFloat(D9.text)}" editable="false" id="L9" width="85" />
+							</mx:HBox>
+							<mx:HBox>
+								<mx:TextInput text="{parseFloat(D9.text)+10}" editable="false" id="D10" width="85" />
+								<mx:TextInput text="745.80" editable="false" id="E10" width="85" />
+								<mx:TextInput text="{parseFloat(F9.text)}" editable="false" id="F10" width="85" />
+								<mx:TextInput text="{parseFloat(G9.text)}" editable="false" id="G10" width="85" />
+								<mx:TextInput text="0" editable="false" id="H10" width="104" />
+								<mx:TextInput text="1.50" editable="false" id="I10" width="114" />
+								<mx:TextInput text="{parseFloat(F10.text)+parseFloat(G10.text)+parseFloat(H10.text)+parseFloat(I10.text)}" editable="false" id="J10" width="85" />
+								<mx:TextInput text="{parseFloat(E10.text)-parseFloat(F10.text)-parseFloat(G10.text)-parseFloat(H10.text)-parseFloat(I10.text)}" editable="false" id="K10" width="85" />
+								<mx:TextInput text="{parseFloat(J10.text)/parseFloat(D10.text)}" editable="false" id="L10" width="85" />
+							</mx:HBox>
+							<mx:HBox>
+								<mx:TextInput text="{parseFloat(D10.text)+10}" editable="false" id="D11" width="85" />
+								<mx:TextInput text="870.10 " editable="false" id="E11" width="85" />
+								<mx:TextInput text="{parseFloat(F10.text)}" editable="false" id="F11" width="85" />
+								<mx:TextInput text="{parseFloat(G10.text)}" editable="false" id="G11" width="85" />
+								<mx:TextInput text="0" editable="false" id="H11" width="104" />
+								<mx:TextInput text="3.00" editable="false" id="I11" width="114" />
+								<mx:TextInput text="{parseFloat(F11.text)+parseFloat(G11.text)+parseFloat(H11.text)+parseFloat(I11.text)}" editable="false" id="J11" width="85" />
+								<mx:TextInput text="{parseFloat(E11.text)-parseFloat(F11.text)-parseFloat(G11.text)-parseFloat(H11.text)-parseFloat(I11.text)}" editable="false" id="K11" width="85" />
+								<mx:TextInput text="{parseFloat(J11.text)/parseFloat(D11.text)}" editable="false" id="L11" width="85" />
+							</mx:HBox>
+							<mx:HBox>
+								<mx:TextInput text="{parseFloat(D11.text)+10}" editable="false" id="D12" width="85" />
+								<mx:TextInput text="994.40 " editable="false" id="E12" width="85" />
+								<mx:TextInput text="{parseFloat(F11.text)}" editable="false" id="F12" width="85" />
+								<mx:TextInput text="{parseFloat(G11.text)}" editable="false" id="G12" width="85" />
+								<mx:TextInput text="0" editable="false" id="H12" width="104" />
+								<mx:TextInput text="4.50" editable="false" id="I12" width="114" />
+								<mx:TextInput text="{parseFloat(F12.text)+parseFloat(G12.text)+parseFloat(H12.text)+parseFloat(I12.text)}" editable="false" id="J12" width="85" />
+								<mx:TextInput text="{parseFloat(E12.text)-parseFloat(F12.text)-parseFloat(G12.text)-parseFloat(H12.text)-parseFloat(I12.text)}" editable="false" id="K12" width="85" />
+								<mx:TextInput text="{parseFloat(J12.text)/parseFloat(D12.text)}" editable="false" id="L12" width="85" />
+							</mx:HBox>
+							<mx:HBox>
+								<mx:TextInput text="{parseFloat(D12.text)+10}" editable="false" id="D13" width="85" />
+								<mx:TextInput text="1118.70" editable="false" id="E13" width="85" />
+								<mx:TextInput text="{parseFloat(F12.text)}" editable="false" id="F13" width="85" />
+								<mx:TextInput text="{parseFloat(G12.text)}" editable="false" id="G13" width="85" />
+								<mx:TextInput text="0" editable="false" id="H13" width="104" />
+								<mx:TextInput text="6.00" editable="false" id="I13" width="114" />
+								<mx:TextInput text="{parseFloat(F13.text)+parseFloat(G13.text)+parseFloat(H13.text)+parseFloat(I13.text)}" editable="false" id="J13" width="85" />
+								<mx:TextInput text="{parseFloat(E13.text)-parseFloat(F13.text)-parseFloat(G13.text)-parseFloat(H13.text)-parseFloat(I13.text)}" editable="false" id="K13" width="85" />
+								<mx:TextInput text="{parseFloat(J12.text)/parseFloat(D12.text)}" editable="false" id="L13" width="85" />
+							</mx:HBox>
+							<mx:HBox>
+								<mx:TextInput text="{parseFloat(D13.text)+10}" editable="false" id="D14" width="85" />
+								<mx:TextInput text="1243.00 " editable="false" id="E14" width="85" />
+								<mx:TextInput text="{parseFloat(F13.text)}" editable="false" id="F14" width="85" />
+								<mx:TextInput text="{parseFloat(G13.text)}" editable="false" id="G14" width="85" />
+								<mx:TextInput text="0" editable="false" id="H14" width="104" />
+								<mx:TextInput text="7.50" editable="false" id="I14" width="114" />
+								<mx:TextInput text="{parseFloat(F14.text)+parseFloat(G14.text)+parseFloat(H14.text)+parseFloat(I14.text)}" editable="false" id="J14" width="85" />
+								<mx:TextInput text="{parseFloat(E14.text)-parseFloat(F14.text)-parseFloat(G14.text)-parseFloat(H14.text)-parseFloat(I14.text)}" editable="false" id="K14" width="85" />
+								<mx:TextInput text="{parseFloat(J14.text)/parseFloat(D14.text)}" editable="false" id="L14" width="85" />
+							</mx:HBox>
+						</mx:VBox>
+					</mx:Canvas>
+					<mx:HBox width="887">
+						<mx:VBox>
+							<mx:Canvas borderColor="black" borderThickness="2" borderStyle="solid" width="560" height="221">
+								<mx:VBox y="3" x="3">
+									<mx:HBox>
+										<mx:Label text="Break Even need reach profit goal of" fontWeight="bold" id="D16" width="250" />
+										<mx:TextInput text="100" editable="false" id="G16" width="85" />
+									</mx:HBox>
+									<mx:HBox>
+										<mx:Label text="Yield" fontWeight="bold" id="D18" width="85" />
+										<mx:Label text="Revenue" fontWeight="bold" id="E18" width="85" />
+										<mx:Label text="Cost" fontWeight="bold" id="F18" width="85" />
+										<mx:Label text="Profit Goal" fontWeight="bold" id="G18" width="85" />
+										<mx:Label text="Total Cost" fontWeight="bold" id="H18" width="85" />
+										<mx:Label text="Target Market" fontWeight="bold" id="I18" width="85" />
+									</mx:HBox>
+									<mx:HBox>
+										<mx:TextInput text="{D9.text}" editable="false" id="D19" width="85" />
+										<mx:TextInput text="{E9.text}" editable="false" id="E19" width="85" />
+										<mx:TextInput text="{J9.text}" editable="false" id="F19" width="85" />
+										<mx:TextInput text="{G16.text}" editable="false" id="G19" width="85" />
+										<mx:TextInput text="{parseFloat(F19.text)+parseFloat(G19.text)}" editable="false" id="H19" width="85" />
+										<mx:TextInput text="{parseFloat(H19.text)/parseFloat(D19.text)}" editable="false" id="I19" width="85" />
+									</mx:HBox>
+									<mx:HBox>
+										<mx:TextInput text="{D10.text}" editable="false" id="D20" width="85" />
+										<mx:TextInput text="{E10.text}" editable="false" id="E20" width="85" />
+										<mx:TextInput text="{J10.text}" editable="false" id="F20" width="85" />
+										<mx:TextInput text="{G19.text}" editable="false" id="G20" width="85" />
+										<mx:TextInput text="{parseFloat(F20.text)+parseFloat(G20.text)}" editable="false" id="H20" width="85" />
+										<mx:TextInput text="{parseFloat(H20.text)/parseFloat(D20.text)}" editable="false" id="I20" width="85" />
+									</mx:HBox>
+									<mx:HBox>
+										<mx:TextInput text="{D11.text}" editable="false" id="D21" width="85" />
+										<mx:TextInput text="{E11.text}" editable="false" id="E21" width="85" />
+										<mx:TextInput text="{J11.text}" editable="false" id="F21" width="85" />
+										<mx:TextInput text="{G20.text}" editable="false" id="G21" width="85" />
+										<mx:TextInput text="{parseFloat(F21.text)+parseFloat(G21.text)}" editable="false" id="H21" width="85" />
+										<mx:TextInput text="{parseFloat(H21.text)/parseFloat(D21.text)}" editable="false" id="I21" width="85" />
+									</mx:HBox>
+									<mx:HBox>
+										<mx:TextInput text="{D12.text}" editable="false" id="D22" width="85" />
+										<mx:TextInput text="{E12.text}" editable="false" id="E22" width="85" />
+										<mx:TextInput text="{J12.text}" editable="false" id="F22" width="85" />
+										<mx:TextInput text="{G21.text}" editable="false" id="G22" width="85" />
+										<mx:TextInput text="{parseFloat(F22.text)+parseFloat(G22.text)}" editable="false" id="H22" width="85" />
+										<mx:TextInput text="{parseFloat(H22.text)/parseFloat(D22.text)}" editable="false" id="I22" width="85" />
+									</mx:HBox>
+									<mx:HBox>
+										<mx:TextInput text="{D13.text}" editable="false" id="D23" width="85" />
+										<mx:TextInput text="{E13.text}" editable="false" id="E23" width="85" />
+										<mx:TextInput text="{J13.text}" editable="false" id="F23" width="85" />
+										<mx:TextInput text="{G22.text}" editable="false" id="G23" width="85" />
+										<mx:TextInput text="{parseFloat(F23.text)+parseFloat(G23.text)}" editable="false" id="H23" width="85" />
+										<mx:TextInput text="{parseFloat(H23.text)/parseFloat(D23.text)}" editable="false" id="I23" width="85" />
+									</mx:HBox>
+									<mx:HBox>
+										<mx:TextInput text="{D14.text}" editable="false" id="D24" width="85" />
+										<mx:TextInput text="{E14.text}" editable="false" id="E24" width="85" />
+										<mx:TextInput text="{J14.text}" editable="false" id="F24" width="85" />
+										<mx:TextInput text="{G23.text}" editable="false" id="G24" width="85" />
+										<mx:TextInput text="{parseFloat(F24.text)+parseFloat(G24.text)}" editable="false" id="H24" width="85" />
+										<mx:TextInput text="{parseFloat(H24.text)/parseFloat(D24.text)}" editable="false" id="I24" width="85" />
+									</mx:HBox>
+								</mx:VBox>
+							</mx:Canvas>
+						</mx:VBox>
+						<mx:Canvas borderColor="black" borderThickness="2" borderStyle="solid"  width="299" height="423">
+							<mx:VBox width="289" x="3" y="3" height="413">
+								<mx:HBox>
+									<mx:Label text="" id="K16" fontWeight="bold" width="100" />
+									<mx:Label text="% of Revenue" id="L16" fontWeight="bold" width="85" />
+									<mx:Label text="of Revenue" id="M16" fontWeight="bold" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Seed Cost" id="K17" fontWeight="bold" width="100" />
+									<mx:TextInput text="12%" id="L17" editable="false" width="85" />
+									<mx:TextInput text="126.00" id="M17" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="N Cost" id="K18" fontWeight="bold" width="100" />
+									<mx:TextInput text="11%" id="L18" editable="false" width="85" />
+									<mx:TextInput text="118.17" id="M18" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Plant Food Cost" id="K19" fontWeight="bold" width="100" />
+									<mx:TextInput text="10%" id="L19" editable="false" width="85" />
+									<mx:TextInput text="143.75" id="M19" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Crop Protection" id="K20" fontWeight="bold" width="100" />
+									<mx:TextInput text="6%" id="L20" editable="false" width="85" />
+									<mx:TextInput text="61.00" id="M20" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Custom Service" id="K21" fontWeight="bold" width="100" />
+									<mx:TextInput text="4%" id="L21" editable="false" width="85" />
+									<mx:TextInput text="42.50" id="M21" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Insurance" id="K22" fontWeight="bold" width="100" />
+									<mx:TextInput text="3%" id="L22" editable="false" width="85" />
+									<mx:TextInput text="33.00" id="M22" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Misc. Cost" id="K23" fontWeight="bold" width="100" />
+									<mx:TextInput text="0%" id="L23" editable="false" width="85" />
+									<mx:TextInput text="- " id="M23" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Interest" id="K24" fontWeight="bold" width="100" />
+									<mx:TextInput text="2%" id="L24" editable="false" width="85" />
+									<mx:TextInput text="23.60" id="M24" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Machinery Cost" id="K25" fontWeight="bold" width="100" />
+									<mx:TextInput text="5%" id="L25" editable="false" width="85" />
+									<mx:TextInput text="56.30" id="M25" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Drying" id="K26" fontWeight="bold" width="100" />
+									<mx:TextInput text="3%" id="L26" editable="false" width="85" />
+									<mx:TextInput text="28.50" id="M26" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Trucking" id="K27" fontWeight="bold" width="100" />
+									<mx:TextInput text="3%" id="L27" editable="false" width="85" />
+									<mx:TextInput text="28.50" id="M27" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Land Cost" id="K28" fontWeight="bold" width="100" />
+									<mx:TextInput text="23%" id="L28" editable="false" width="85" />
+									<mx:TextInput text="235.00" id="M28" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Profit" id="K29" fontWeight="bold" width="100" />
+									<mx:TextInput text="13%" id="L29" editable="false" width="85" />
+									<mx:TextInput text="135.00" id="M29" editable="false" width="85" />
+								</mx:HBox>
+								<mx:HBox>
+									<mx:Label text="Totle Cost" id="K30" fontWeight="bold" width="100" />
+									<mx:TextInput text="100%" id="L30" editable="false" width="85" />
+									<mx:TextInput text="1031.70" id="M30" editable="false" width="85" />
+								</mx:HBox>
+							</mx:VBox>
+						</mx:Canvas>
+					</mx:HBox>
+				</mx:VBox>
+			</mx:VBox>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:VBox >
+				<mx:ColumnChart width="421.872" height="376">
+				
+				</mx:ColumnChart>
+			</mx:VBox>
+			<mx:VBox>
+				<mx:PieChart width="424.116" height="378">
+					
+				</mx:PieChart>
+			</mx:VBox>
+		</mx:HBox>
+	</mx:VBox>
+</mx:Canvas>

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="746" height="1144">
+	
+	<mx:Script>
+		<![CDATA[
+			
+			private var _primaryTillage:Array = [{label:"None", value:0}, 
+												{label:"Chisel Plow", value:10.70}, 
+												{label:"Disk Chiesel", value:14.00}, 
+												{label:"Moldboard Plow", value:21.30}, 
+												{label:"Offset Disk", value:10.10}, 
+												{label:"V-Ripper", value:13.30}];
+			
+			private var _secondaryTillage:Array = [{label:"None", value:0}, 
+													{label:"Field Cultivator", value:3.20}, 
+													{label:"Mulch Finisher", value:10.40}, 
+													{label:"Tandem Disk", value:8.20}];
+			
+			private var _planting:Array = [{label:"None", value:0}, 
+											{label:"Coventional", value:8.30}, 
+											{label:"Grain Drill", value:10.80}, 
+											{label:"No till Drill", value:15.60}, 
+											{label:"No Till Planter", value:10.50}, 
+											{label:"Split Row", value:10.90}];
+			
+			private var _cropCare:Array = [{label:"None", value:0}, 
+											{label:"Rotary Hoe", value:4.00}, 
+											{label:"Row Cultivating", value:7.50}];
+			
+			private var _sprayingAndAmmonia:Array = [{label:"None", value:0}, 
+													{label:"Anhydrous Ammonia", value:7.40}, 
+													{label:"Pull Type", value:3.20}, 
+													{label:"Self Propelled", value:3.10}];
+			
+			private var _harvest:Array = [{label:"None", value:0}, {label:"Combine Beans", value:26.30}, {label:"Combine Corn", value:31.10}];
+			
+		]]>
+	</mx:Script>
+	
+	<mx:HBox x="10" horizontalGap="50">
+	<mx:VBox>
+		<mx:VBox x="10" y="5">
+			<mx:HBox>
+				<mx:Label text="Corn" id="B2" fontWeight="bold" textAlign="center" width="320"/>
+			</mx:HBox>
+			<mx:HBox>
+					
+			</mx:HBox>
+		</mx:VBox>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="203">
+			<mx:VBox y="3" x="3">
+				<mx:HBox>
+					<mx:Label text="CornPrimary Tillage" id="B4" fontWeight="bold" width="160" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornChiselPlow" text="Chisel Plow" width="160" dataProvider="{_primaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C5" text="{CornChiselPlow.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone1" width="160" dataProvider="{_primaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C6" text="{CornNone1.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone2" text="None" width="160" dataProvider="{_primaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C7" text="{CornNone2.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone3" text="None" width="160" dataProvider="{_primaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C8" text="{CornNone3.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone4" text="None" width="160" dataProvider="{_primaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C9" text="{CornNone4.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="B10" text="Total Primary Tillage" />
+					<mx:Text width="160" id="C10" text="$ 10.70" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="148">
+			<mx:VBox y="3" x="3">
+				<mx:HBox>
+					<mx:Label text="Secondary Tillage" id="B12" fontWeight="bold" width="160" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornFieldCulti" text="Field Cultivator" width="160" dataProvider="{_secondaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C13" text="{CornFieldCulti.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone5" text="None" width="160" dataProvider="{_secondaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C14" text="{CornNone5.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone6" text="None" width="160" dataProvider="{_secondaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C15" text="{CornNone6.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="B16" text="Total Secondary Tillage" />
+					<mx:Text width="160" id="C16" text="$ 6.20" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="203">
+			<mx:VBox y="3" x="3">
+				<mx:HBox>
+					<mx:Label text="Planting" id="B18" fontWeight="bold" width="160" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornCoventional" text="Coventional" width="160" dataProvider="{_planting}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C19" text="{CornCoventional.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone7" text="None" width="160" dataProvider="{_planting}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C20" text="{CornNone7.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone8" text="None" width="160" dataProvider="{_planting}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C21" text="{CornNone8.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone9" text="None" width="160" dataProvider="{_planting}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C22" text="{CornNone9.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone10" text="None" width="160" dataProvider="{_planting}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C23" text="{CornNone10.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="B24" text="Total Planting" />
+					<mx:Text width="160" id="C24" text="$ 8.30" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="120">
+			<mx:VBox y="3" x="3">
+				<mx:HBox>
+					<mx:Label text="Crop Care" id="B26" fontWeight="bold" width="160" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone11" text="None" width="160" dataProvider="{_cropCare}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C27" text="{CornNone11.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone12" text="None" width="160" dataProvider="{_cropCare}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C28" text="{CornNone12.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="B29" text="Total Crop Care" />
+					<mx:Text width="160" id="C29" text="$ - " />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="148">
+			<mx:VBox y="3" x="3">
+				<mx:HBox>
+					<mx:Label text="Spraying and Ammonia" id="B31" fontWeight="bold" width="160" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone13" text="None" width="160" dataProvider="{_sprayingAndAmmonia}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C32" text="{CornNone13.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone14" text="None" width="160" dataProvider="{_sprayingAndAmmonia}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C33" text="{CornNone14.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornNone15" text="None" width="160" dataProvider="{_sprayingAndAmmonia}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C34" text="{CornNone15.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="B35" text="Total Spraying" />
+					<mx:Text width="160" id="C35" text="$ - " />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="93">
+			<mx:VBox y="3" x="3">
+				<mx:HBox>
+					<mx:Label text="Harvest" id="B37" fontWeight="bold" width="160" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="CornCombineCorn" text="Combine Corn" width="160" dataProvider="{_harvest}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="C38" text="{CornCombineCorn.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="B39" text="Total Harvest" />
+					<mx:Text width="160" id="C39" text="$ 31.10" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas width="338">
+			<mx:VBox x="10" y="5">
+				<mx:HBox>
+					
+				</mx:HBox>
+				<mx:HBox>
+				
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="40">
+			<mx:VBox y="3" x="3">
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="B42" text="Total Machinery Cost" />
+					<mx:Text width="160" id="C42" text="$ 56.30" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+	</mx:VBox>
+	
+	<mx:VBox height="1119" width="352" x="394" y="3">
+		<mx:VBox x="10" y="5">
+			<mx:HBox>
+				<mx:Label text="Soybeans" id="E2" fontWeight="bold" textAlign="center" width="320"/>
+			</mx:HBox>
+			<mx:HBox>
+				
+			</mx:HBox>
+		</mx:VBox>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="203">
+			<mx:VBox y="3" x="3">
+				<mx:HBox>
+					<mx:Label text="Primary Tillage" id="E4" fontWeight="bold" width="160" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyChiselPlow" text="Chisel Plow" width="160" dataProvider="{_primaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F5" text="{SoyChiselPlow.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone1" text="None" width="160" dataProvider="{_primaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F6" text="{SoyNone1.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone2" text="None" width="160" dataProvider="{_primaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F7" text="{SoyNone2.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone3" text="None" width="160" dataProvider="{_primaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F8" text="{SoyNone3.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone4" text="None" width="160" dataProvider="{_primaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F9" text="{SoyNone4.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="E10" text="Total Primary Tillage" />
+					<mx:Text width="160" id="F10" text="$ 10.70" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="148">
+			<mx:VBox y="3" x="3">
+				<mx:HBox>
+					<mx:Label text="Secondary Tillage" id="E12" fontWeight="bold" width="160" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyFieldCulti" text="Field Cultivator" width="160" dataProvider="{_secondaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F13" text="{SoyFieldCulti.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone5" text="None" width="160" dataProvider="{_secondaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F14" text="{SoyNone5.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone6" text="None" width="160" dataProvider="{_secondaryTillage}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F15" text="{SoyNone6.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="E16" text="Total Secondary Tillage" />
+					<mx:Text width="160" id="F16" text="$ 6.20" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="203">
+			<mx:VBox y="3" x="3">
+				<mx:HBox>
+					<mx:Label text="Planting" id="E18" fontWeight="bold" width="160" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyCoventional" text="Coventional" width="160" dataProvider="{_planting}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F19" text="{SoyCoventional.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone7" text="None" width="160" dataProvider="{_planting}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F20" text="{SoyNone7.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone8" text="None" width="160" dataProvider="{_planting}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F21" text="{SoyNone8.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone9" text="None" width="160" dataProvider="{_planting}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F22" text="{SoyNone9.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone10" text="None" width="160" dataProvider="{_planting}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F23" text="{SoyNone10.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="E24" text="Total Planting" />
+					<mx:Text width="160" id="F24" text="$ 8.30" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="120">
+			<mx:VBox y="3" x="3">
+				<mx:HBox>
+					<mx:Label text="Crop Care" id="E26" fontWeight="bold" width="160" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone11" text="None" width="160" dataProvider="{_cropCare}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F27" text="{SoyNone11.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone12" text="None" width="160" dataProvider="{_cropCare}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F28" text="{SoyNone12.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="E29" text="Total Crop Care" />
+					<mx:Text width="160" id="F29" text="$ - " />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="148">
+			<mx:VBox y="3" x="3">
+				<mx:HBox>
+					<mx:Label text="Spraying and Ammonia" id="E31" fontWeight="bold" width="160" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone13" text="None" width="160" dataProvider="{_sprayingAndAmmonia}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F32" text="{SoyNone13.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone14" text="None" width="160" dataProvider="{_sprayingAndAmmonia}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F33" text="{SoyNone14.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyNone15" text="None" width="160" dataProvider="{_sprayingAndAmmonia}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F34" text="{SoyNone15.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="E35" text="Total Spraying" />
+					<mx:Text width="160" id="CF5" text="$ - " />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="93">
+			<mx:VBox y="3" x="3">
+				<mx:HBox>
+					<mx:Label text="Harvest" id="E37" fontWeight="bold" width="160" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="SoyCombineCorn" text="Combine Corn" width="160" dataProvider="{_harvest}">
+						
+					</mx:ComboBox>
+					<mx:TextInput width="160" id="F38" text="{SoyCombineCorn.selectedItem.value}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="E39" text="Total Harvest" />
+					<mx:Text width="160" id="F39" text="$ 26.30" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas width="338">
+			<mx:VBox x="10" y="5">
+				<mx:HBox>
+					
+				</mx:HBox>
+				<mx:HBox>
+				
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas borderStyle="solid" borderThickness="2" borderColor="black" width="338" height="40">
+			<mx:VBox y="3" x="3">
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label width="160" id="E42" text="Total Machinery Cost" />
+					<mx:Text width="160" id="F42" text="$ 51.50" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+	</mx:VBox>
+	</mx:HBox>
+</mx:Canvas>

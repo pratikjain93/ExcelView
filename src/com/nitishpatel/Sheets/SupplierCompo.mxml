@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" backgroundColor="white">
+	<mx:Script>
+		<![CDATA[
+			import com.nitishpatel.managers.DataManager;
+			import com.nitishpatel.managers.DataSheetDataManager;
+			
+			import mx.charts.chartClasses.DataTransform;
+			import mx.events.FlexEvent;
+			
+			
+			
+			private var _dataManager:DataManager = DataManager.getInstance();
+			
+			[Bindable]
+			private var _dataSheetManager:DataSheetDataManager = DataSheetDataManager.getInstance();
+			
+			public function renderData():void
+			{
+				var xmlLoaded:XML = _dataManager.xmlData;
+				
+				
+				C5.text = xmlLoaded.suplier.c5;
+				C6.text = xmlLoaded.suplier.c6;
+				C7.text = xmlLoaded.suplier.c7;
+				
+				E9.text = xmlLoaded.suplier.e9;
+				E10.text = xmlLoaded.suplier.e10;
+				
+				E13.text = xmlLoaded.suplier.e13;
+				F13.text = xmlLoaded.suplier.f13;
+				
+				E16.text = xmlLoaded.suplier.e16;
+				F16.text = xmlLoaded.suplier.f16;
+				
+				C21.text = xmlLoaded.suplier.c21;
+				trace("c21,d21",xmlLoaded.suplier.d21,xmlLoaded.suplier.c21);
+				D21.text = xmlLoaded.suplier.d21;
+				C22.text = xmlLoaded.suplier.c22;
+				D22.text = xmlLoaded.suplier.d22;
+				E23.text = xmlLoaded.suplier.e23;
+				F23.text = xmlLoaded.suplier.f23;
+				
+				C28.text = xmlLoaded.suplier.c28;
+				C29.text = xmlLoaded.suplier.c29;
+				C30.text = xmlLoaded.suplier.c30;
+				C31.text = xmlLoaded.suplier.c31;
+				
+				H28.text = xmlLoaded.suplier.h28;
+				H29.text = xmlLoaded.suplier.h29;
+				H30.text = xmlLoaded.suplier.h30;
+				H31.text = xmlLoaded.suplier.h31;
+				
+				
+				C36.text = xmlLoaded.suplier.c36;
+				C37.text = xmlLoaded.suplier.c37;
+				C38.text = xmlLoaded.suplier.c38;
+				C39.text = xmlLoaded.suplier.c39;
+				
+				
+				C41.text = xmlLoaded.suplier.c41;
+				C42.text = xmlLoaded.suplier.c42;
+				C43.text = xmlLoaded.suplier.c43;
+				D41.text = xmlLoaded.suplier.d41;
+				D42.text = xmlLoaded.suplier.d42;
+				D43.text = xmlLoaded.suplier.d43;
+				
+				
+				K36.text = xmlLoaded.suplier.k36;
+				K37.text = xmlLoaded.suplier.k37;
+				K38.text = xmlLoaded.suplier.k38;
+				K39.text = xmlLoaded.suplier.k39;
+				
+				
+				K41.text = xmlLoaded.suplier.k41;
+				K42.text = xmlLoaded.suplier.k42;
+				K43.text = xmlLoaded.suplier.k43;
+				L41.text = xmlLoaded.suplier.l41;
+				L42.text = xmlLoaded.suplier.l42;
+				L43.text = xmlLoaded.suplier.l43;
+				
+				
+				C48.text = xmlLoaded.suplier.c48;
+				C49.text = xmlLoaded.suplier.c49;
+				C50.text = xmlLoaded.suplier.c50;
+				D48.text = xmlLoaded.suplier.d48;
+				D49.text = xmlLoaded.suplier.d49;
+				D50.text = xmlLoaded.suplier.d50;
+			
+				
+				C55.text = xmlLoaded.suplier.c55;
+				C56.text = xmlLoaded.suplier.c56;
+				C57.text = xmlLoaded.suplier.c57;
+				C58.text = xmlLoaded.suplier.c58;
+				C59.text = xmlLoaded.suplier.c59;
+				C60.text = xmlLoaded.suplier.c60;
+				C61.text = xmlLoaded.suplier.c61;
+				C62.text = xmlLoaded.suplier.c62;
+				C63.text = xmlLoaded.suplier.c63;
+				
+				
+				D55.text = xmlLoaded.suplier.d55;
+				D56.text = xmlLoaded.suplier.d56;
+				D57.text = xmlLoaded.suplier.d57;
+				D58.text = xmlLoaded.suplier.d58;
+				D59.text = xmlLoaded.suplier.d59;
+				D60.text = xmlLoaded.suplier.d60;
+				D61.text = xmlLoaded.suplier.d61;
+				D62.text = xmlLoaded.suplier.d62;
+				D63.text = xmlLoaded.suplier.d63;
+			}
+			
+			
+			private function parseStr(value:String):Number
+			{
+				return parseFloat(value);
+			}
+			
+		]]>
+	</mx:Script>
+	<mx:VBox y="0" x="10">
+		<mx:VBox><!--logo-->
+			<mx:HBox>
+				<mx:Image source="assets/logo.jpg"/>
+			</mx:HBox>
+		</mx:VBox>
+		<mx:VBox y="3" x="3"><!--title-->
+			<mx:HBox horizontalGap="50">
+				<mx:Label id="B5" text="Grower :"/>
+				<mx:TextInput id="C5" styleName="txtbox" />
+			</mx:HBox>
+			<mx:HBox horizontalGap="20">
+				<mx:Label id="B6" text="prepared By :" />
+				<mx:TextInput id="C6" styleName="txtbox" />
+			</mx:HBox>
+			<mx:HBox horizontalGap="32">
+				<mx:Label id="B7" text="Crop Year :" />
+				<mx:TextInput id="C7" styleName="txtbox" />
+			</mx:HBox>
+		</mx:VBox>
+		
+		<mx:Canvas width="321" height="84"  y="89" borderColor="#020202" borderStyle="solid" borderThickness="2">
+			<mx:VBox y="3" x="3"><!--Market Price-->
+				<mx:HBox>
+					<mx:Label id="B8" text="Market Price" fontWeight="bold"  width="125"/>
+					<mx:Label id="E8" text="Price"  width="85"/>
+					<mx:Label id="F8" text="FOB Basis"  width="85"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B9" text="Dec  Corn Futures :"  width="125"/>
+					<mx:TextInput id="E9" styleName="txtbox" width="85" />
+					<mx:TextInput id="F9" styleName="txtbox" width="85" text="-0.25" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B10" text="Nov  Bean Futures :" width="125" />
+					<mx:TextInput id="E10" styleName="txtbox" width="85" />
+					<mx:TextInput id="F10" styleName="txtbox" width="85" text="-0.17" editable="false" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas width="321" height="175"  y="89" borderColor="#020202" borderStyle="solid" borderThickness="2">
+			<mx:VBox  x="3" y="3"><!--Market Price-->
+				<mx:HBox>
+					<mx:Label id="B12" text="Revenue" fontWeight="bold"  width="125"/>
+					<mx:Label id="E12" text="Corn"  width="85"/>
+					<mx:Label id="F12" text="Beans"  width="85"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B13" text="Yield Goal :"  width="125"/>
+					<mx:TextInput id="E13" styleName="txtbox" width="85" />
+					<mx:TextInput id="F13" styleName="txtbox" width="85" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B14" text="Cash Price :" width="125" />
+					<mx:TextInput id="E14" width="85" text="{parseFloat(E9.text)+parseFloat(F9.text)}" editable="false" />
+					<mx:TextInput id="F14" width="85" text="{parseFloat(E10.text)+parseFloat(F10.text)}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B15" text="Crop Revenue :"  width="125"/>
+					<mx:TextInput id="E15" width="85" text="{parseFloat(E13.text)*parseFloat(E14.text)}" editable="false" />
+					<mx:TextInput id="F15" width="85" text="{parseFloat(F13.text)*parseFloat(F14.text)}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B16" text="Gov. Payment/acre :" width="125" />
+					<mx:TextInput id="E16" styleName="txtbox" width="85" />
+					<mx:TextInput id="F16" styleName="txtbox" width="85" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label id="B17" text="Total Revenue :" width="125" />
+					<mx:Text id="E17" styleName="text-totle" width="85" text="{parseFloat(E15.text)+parseFloat(E16.text)}" />
+					<mx:Text id="F17" styleName="text-totle" width="85" text="{parseFloat(F15.text)+parseFloat(F16.text)}" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas width="488" height="171"  y="89" borderColor="#020202" borderStyle="solid" borderThickness="2">
+			<mx:VBox  x="3" y="3" width="478"><!--Market Price-->
+				<mx:HBox>
+					<mx:Label id="B19" text="Seed" fontWeight="bold"  width="125"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B20" text=""  width="125"/>
+					<mx:Label id="C20" text="Price/bg"  width="80"/>
+					<mx:Label id="D20" text="Population"  width="80"/>
+					<mx:Label id="E20" text="Corn"  width="80"/>
+					<mx:Label id="F20" text="Beans"  width="80"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B21" text="Seed Corn 80K :" width="125" />
+					<mx:TextInput id="C21" styleName="txtbox" width="80" text="$ 280.00" />
+					<mx:TextInput id="D21" styleName="txtbox" width="80" />
+					<mx:TextInput id="E21" width="80" text="{(parseFloat(C21.text) / 80000) * parseFloat(D21.text)}" editable="false" />
+					<mx:TextInput id="F21" width="80"  text="0"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B22" text="Seed Bean 140K :"  width="125"/>
+					<mx:TextInput id="C22" styleName="txtbox" width="80" text="$50.00" />
+					<mx:TextInput id="D22" styleName="txtbox" width="80" text="140,00" />
+					<mx:TextInput id="E22" width="80"  text="0"/>
+					<mx:TextInput id="F22" width="80" text="{(parseFloat(C22.text) / 140000) * parseFloat(D22.text)}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B23" text="Seed Treatments :" width="125" />
+					<mx:TextInput id="C23" width="80"  text="0"/>
+					<mx:TextInput id="D23" width="80"  text="0"/>
+					<mx:TextInput id="E23" styleName="txtbox" width="80" text="$ - "/>
+					<mx:TextInput id="F23" styleName="txtbox" width="80" text="{parseFloat(F21.text) + parseFloat(F22.text) + parseFloat(F23.text)}" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label id="B24" text="Total Seed Cost :" width="125" />
+					<mx:Text id="C24" width="80" />
+					<mx:Text id="D24" width="80" />
+					<mx:Text id="E24" width="80" text="{parseFloat(E21.text) + parseFloat(E22.text) + parseFloat(E23.text)}" />
+					<mx:Text id="F24" width="80" text="$ 63.50" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:HBox>
+			<mx:Canvas width="488" height="200"  y="89" borderColor="#020202" borderStyle="solid" borderThickness="2">
+			<mx:VBox  x="3" y="3" width="478"><!--Market Price-->
+				<mx:HBox>
+					<mx:Label id="B26" text="(N)itrogen Management Plan (Corn)" fontWeight="bold"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B27" text="Source"  width="125" fontWeight="bold"/>
+					<mx:Label id="C27" text="Rate/Ac"  width="80" fontWeight="bold"/>
+					<mx:Label id="D27" text="Actual"  width="80" fontWeight="bold"/>
+					<mx:Label id="E27" text="Price/tn"  width="80" fontWeight="bold"/>
+					<mx:Label id="F27" text="Cost"  width="80" fontWeight="bold"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="B28" width="125" dataProvider="{_dataSheetManager.nitrogenManagementPlan}"/>
+					<mx:TextInput id="C28" styleName="txtbox" width="80" text="200" />
+					<mx:TextInput id="D28" width="80" text="{B28.selectedItem.analysis*parseFloat(C28.text)}" editable="false" />
+					<mx:TextInput id="E28" width="80" text="{B28.selectedItem.price}" editable="false" />
+					<mx:TextInput width="80" text="{parseFloat(E28.text)/2000*parseFloat(C28.text)}" editable="false"  id="F28"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="B29" width="125" dataProvider="{_dataSheetManager.nitrogenManagementPlan}"/>
+					<mx:TextInput id="C29" styleName="txtbox" width="80" text="110" />
+					<mx:TextInput id="D29" width="80" text="{B29.selectedItem.analysis*parseFloat(C29.text)}" editable="false" />
+					<mx:TextInput id="E29" width="80" text="{B29.selectedItem.price}" editable="false" />
+					<mx:TextInput width="80" text="{parseFloat(E29.text)/2000*parseFloat(C29.text)}" editable="false"  id="F29"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="B30" width="125" dataProvider="{_dataSheetManager.nitrogenManagementPlan}"/>
+					<mx:TextInput styleName="txtbox" id="C30" width="80" text="0" />
+					<mx:TextInput id="D30" width="80" text="{B30.selectedItem.analysis*parseFloat(C30.text)}" editable="false" />
+					<mx:TextInput id="E30" width="80" text="{B30.selectedItem.price}" editable="false" />
+					<mx:TextInput width="80" text="{parseFloat(E30.text)/2000*parseFloat(C30.text)}" editable="false"  id="F30"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="B31" width="125" dataProvider="{_dataSheetManager.nitrogenManagementPlan}"/>
+					<mx:TextInput styleName="txtbox" id="C31" width="80" text="0" />
+					<mx:TextInput id="D31" width="80" text="{B31.selectedItem.analysis*parseFloat(C31.text)}" editable="false" />
+					<mx:TextInput id="E31" width="80" text="{B31.selectedItem.price}" editable="false" />
+					<mx:TextInput width="80" text="{parseFloat(E31.text)/2000*parseFloat(C31.text)}" editable="false"  id="F31"/>
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label id="B32" text="Total N Cost :" width="125"  height="28" />
+					<mx:Text id="C32" width="80" />
+					<mx:Text id="D32" width="80" />
+					<mx:Text id="E32" width="80" />
+					<mx:Text width="80" text="{parseFloat(F28.text)+parseFloat(F29.text)+parseFloat(F30.text)+parseFloat(F31.text)}" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas width="488" height="200"  y="89" borderColor="#020202" borderStyle="solid" borderThickness="2">
+			<mx:VBox  x="3" y="3" width="478"><!--Market Price-->
+				<mx:HBox>
+					<mx:Label id="G26" text="(N)itrogen Stabilizers (Corn)" fontWeight="bold"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="G27" text="Source"  width="125" fontWeight="bold"/>
+					<mx:Label id="H27" text=""  width="80" fontWeight="bold"/>
+					<mx:Label id="I27" text="Rate/Ac"  width="80" fontWeight="bold"/>
+					<mx:Label id="J27" text="Price"  width="80" fontWeight="bold"/>
+					<mx:Label id="K27" text="Cost"  width="80" fontWeight="bold"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="G28" width="125" dataProvider="{_dataSheetManager.nitrogenStabilizers}"/>
+					<mx:TextInput id="H28" styleName="txtbox" width="80" text="1" />
+					<mx:TextInput id="I28" width="80" text="{G28.selectedItem.per}" editable="false" />
+					<mx:TextInput id="J28" width="80" text="{G28.selectedItem.price}" editable="false" />
+					<mx:TextInput id="K28" width="80" text="{G28.selectedItem.perUnit}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="G29" width="125" dataProvider="{_dataSheetManager.nitrogenStabilizers}"/>
+					<mx:TextInput id="H29" styleName="txtbox" width="80" text="0" />
+					<mx:TextInput id="I29" width="80" text="{G29.selectedItem.per}" editable="false" />
+					<mx:TextInput id="J29" width="80" text="{G29.selectedItem.price}" editable="false" />
+					<mx:TextInput id="K29" width="80" text="{G29.selectedItem.perUnit}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="G30" width="125" dataProvider="{_dataSheetManager.nitrogenStabilizers}"/>
+					<mx:TextInput styleName="txtbox" id="H30" width="80" text="0" />
+					<mx:TextInput id="I30" width="80" text="{G30.selectedItem.per}" editable="false" />
+					<mx:TextInput id="J30" width="80" text="{G30.selectedItem.price}" editable="false" />
+					<mx:TextInput id="K30" width="80" text="{G30.selectedItem.perUnit}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="G31" width="125" dataProvider="{_dataSheetManager.nitrogenStabilizers}"/>
+					<mx:TextInput styleName="txtbox" id="H31" width="80" text="0" />
+					<mx:TextInput id="I31" width="80" text="{G31.selectedItem.per}" editable="false" />
+					<mx:TextInput id="J31" width="80" text="{G31.selectedItem.price}" editable="false" />
+					<mx:TextInput id="K31" width="80" text="{G31.selectedItem.perUnit}" editable="false" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label id="G32" text="Total N Stabilizers Cost :" width="213" />
+					<mx:Text id="I32" width="80" />
+					<mx:Text id="J32" width="80" />
+					<mx:Text id="K32" width="80" text="{parseFloat(K28.text)+parseFloat(K29.text)+parseFloat(K30.text)+parseFloat(K31.text)}" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		</mx:HBox>
+		<mx:HBox>
+			<mx:Canvas width="668" height="309"  y="89" borderColor="#020202" borderStyle="solid" borderThickness="2">
+			<mx:VBox  x="3" y="3" width="657"><!--Market Price-->
+				<mx:HBox>
+					<mx:Label id="B34" text="Plant Food (Corn)" fontWeight="bold" width="125"/>
+					<mx:Label id="F34" text="Actual" fontWeight="bold" width="480" textAlign="center"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B35" text="Source"  width="125" fontWeight="bold"/>
+					<mx:Label id="C35" text="Rate/Ac"  width="80" fontWeight="bold"/>
+					<mx:Label id="D35" text="$/Tn"  width="80" fontWeight="bold"/>
+					<mx:Label id="E35" text="N"  width="80" fontWeight="bold"/>
+					<mx:Label id="F35" text="P"  width="80" fontWeight="bold"/>
+					<mx:Label id="G35" text="K"  width="80" fontWeight="bold"/>
+					<mx:Label id="H35" text="Cost"  width="80" fontWeight="bold"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="B36" width="125" dataProvider="{_dataSheetManager.planFood}"/>
+					<mx:TextInput id="C36" styleName="txtbox" width="80" text="100" />
+					<mx:TextInput id="D36" width="80" text="{B36.selectedItem.price}" editable="false" />
+					<mx:TextInput id="E36" width="80" text="{B36.selectedItem.n*parseFloat(C36.text)}" editable="false" />
+					<mx:TextInput id="F36" width="80" text="{B36.selectedItem.p*parseFloat(C36.text)}" editable="false" />
+					<mx:TextInput id="G36" width="80" text="{B36.selectedItem.k*parseFloat(C36.text)}" editable="false" />
+					<mx:TextInput width="80" text="{parseFloat(D36.text)/2000*parseFloat(C36.text)}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="B37" width="125" dataProvider="{_dataSheetManager.planFood}"/>
+					<mx:TextInput id="C37" styleName="txtbox" width="80" text="100" />
+					<mx:TextInput id="D37" width="80" text="{B37.selectedItem.price}" editable="false" />
+					<mx:TextInput id="E37" width="80" text="{B37.selectedItem.n*parseFloat(C37.text)}" editable="false" />
+					<mx:TextInput id="F37" width="80" text="{B37.selectedItem.p*parseFloat(C37.text)}" editable="false" />
+					<mx:TextInput id="G37" width="80" text="{B37.selectedItem.k*parseFloat(C37.text)}" editable="false" />
+					<mx:TextInput width="80" text="{parseFloat(D37.text)/2000*parseFloat(C37.text)}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="B38" width="125" dataProvider="{_dataSheetManager.planFood}"/>
+					<mx:TextInput id="C38" styleName="txtbox" width="80" text="200" />
+					<mx:TextInput id="D38" width="80" text="{B38.selectedItem.price}" editable="false" />
+					<mx:TextInput id="E38" width="80" text="{B38.selectedItem.n*parseFloat(C38.text)}" editable="false" />
+					<mx:TextInput id="F38" width="80" text="{B38.selectedItem.p*parseFloat(C38.text)}" editable="false" />
+					<mx:TextInput id="G38" width="80" text="{B38.selectedItem.k*parseFloat(C38.text)}" editable="false" />
+					<mx:TextInput width="80" text="{parseFloat(D38.text)/2000*parseFloat(C38.text)}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:ComboBox id="B39" width="125" dataProvider="{_dataSheetManager.planFood}"/>
+					<mx:TextInput id="C39" styleName="txtbox" width="80" text="2000" />
+					<mx:TextInput id="D39" width="80" text="{B39.selectedItem.price}" editable="false" />
+					<mx:TextInput id="E39" width="80" text="{B39.selectedItem.n*parseFloat(C39.text)}" editable="false" />
+					<mx:TextInput id="F39" width="80" text="{B39.selectedItem.p*parseFloat(C39.text)}" editable="false" />
+					<mx:TextInput id="G39" width="80" text="{B39.selectedItem.k*parseFloat(C39.text)}" editable="false" />
+					<mx:TextInput width="80" text="{parseFloat(D39.text)/2000*parseFloat(C39.text)}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B40" text="Other Nutrients"  width="125" fontWeight="bold"/>
+					<mx:Label id="C40" text="Rate/Ac"  width="80" fontWeight="bold"/>
+					<mx:Label id="D40" text="$/Unit"  width="80" fontWeight="bold"/>
+					<mx:Label id="E40" text=""  width="80" fontWeight="bold"/>
+					<mx:Label id="F40" text=""  width="80" fontWeight="bold"/>
+					<mx:Label id="G40" text=""  width="80" fontWeight="bold"/>
+					<mx:Label id="H40" text=""  width="80" fontWeight="bold"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B41" text="Starters :"  width="125"/>
+					<mx:TextInput id="C41" styleName="txtbox" width="80" text="0" />
+					<mx:TextInput id="D41" styleName="txtbox" width="80" text="0" />
+					<mx:TextInput id="E41" width="80" />
+					<mx:TextInput id="F41" width="80" />
+					<mx:TextInput id="G41" width="80" />
+					<mx:TextInput width="80" text="{parseFloat(C41.text)*parseFloat(D41.text)}" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B42" text="trace minerals :"  width="125"/>
+					<mx:TextInput id="C42" styleName="txtbox" width="80" text="0" />
+					<mx:TextInput id="D42" styleName="txtbox" width="80" text="0" />
+					<mx:TextInput id="E42" width="80" />
+					<mx:TextInput id="F42" width="80" />
+					<mx:TextInput id="G42" width="80" />
+					<mx:TextInput width="80" text="{parseFloat(C42.text)*parseFloat(D42.text)}" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B43" text="other :"  width="125"/>
+					<mx:TextInput id="C43" styleName="txtbox" width="80" text="0" />
+					<mx:TextInput id="D43" styleName="txtbox" width="80" text="0" />
+					<mx:TextInput id="E43" width="80" />
+					<mx:TextInput id="F43" width="80" />
+					<mx:TextInput id="G43" width="80" />
+					<mx:TextInput width="80" text="{parseFloat(C43.text)*parseFloat(D43.text)}" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label id="B44" text="Total Plant Food Cost :" width="213" />
+					<mx:Text id="D44" width="80" />
+					<mx:Text id="E44" width="80" />
+					<mx:Text id="F44" width="80" />
+					<mx:Text id="G44" width="80" />
+					<mx:Text id="H44" width="80" text="$ 143.75" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas width="668" height="309"  y="89" borderColor="#020202" borderStyle="solid" borderThickness="2">
+			<mx:VBox  x="3" y="3" width="657"><!--Market Price-->
+				<mx:HBox>
+					<mx:Label id="J34" text="Plant Food (Soybeans)" fontWeight="bold" width="125"/>
+					<mx:Label id="N34" text="Actual" fontWeight="bold" width="480" textAlign="center"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="J35" text="Source"  width="125" fontWeight="bold"/>
+					<mx:Label id="K35" text="Rate/Ac"  width="80" fontWeight="bold"/>
+					<mx:Label id="L35" text="$/Tn"  width="80" fontWeight="bold"/>
+					<mx:Label id="M35" text="N"  width="80" fontWeight="bold"/>
+					<mx:Label id="N35" text="P"  width="80" fontWeight="bold"/>
+					<mx:Label id="O35" text="K"  width="80" fontWeight="bold"/>
+					<mx:Label id="P35" text="Cost"  width="80" fontWeight="bold"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="J36" text="None :" width="125" />
+					<mx:TextInput id="K36" styleName="txtbox" width="80" text="100" />
+					<mx:TextInput id="L36" width="80" text=" 0  " editable="false" />
+					<mx:TextInput id="M36" width="80" text=" 0 " editable="false" />
+					<mx:TextInput id="N36" width="80" text=" 0 " editable="false" />
+					<mx:TextInput id="O36" width="80" text=" 0 " editable="false" />
+					<mx:TextInput width="80" text="{parseFloat(L36.text)/2000*parseFloat(K36.text)}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="J37" text="None :"  width="125"/>
+					<mx:TextInput id="K37" styleName="txtbox" width="80" text="100" />
+					<mx:TextInput id="L37" width="80" text=" 0 " editable="false" />
+					<mx:TextInput id="M37" width="80" text=" 0 " editable="false" />
+					<mx:TextInput id="N37" width="80" text=" 0 " editable="false" />
+					<mx:TextInput id="O37" width="80" text=" 0 " editable="false" />
+					<mx:TextInput width="80" text="{parseFloat(L37.text)/2000*parseFloat(K37.text)}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="J38" text="None :" width="125" />
+					<mx:TextInput id="K38" styleName="txtbox" width="80" text="200" />
+					<mx:TextInput id="L38" width="80" text=" 0 " editable="false" />
+					<mx:TextInput id="M38" width="80" text=" 0 " editable="false" />
+					<mx:TextInput id="N38" width="80" text=" 0 " editable="false" />
+					<mx:TextInput id="O38" width="80" text=" 0 " editable="false" />
+					<mx:TextInput width="80" text="{parseFloat(L38.text)/2000*parseFloat(K38.text)}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="J39" text="None :" width="125" />
+					<mx:TextInput id="K39" styleName="txtbox" width="80" text="2000" />
+					<mx:TextInput id="L39" width="80" text=" 0 " editable="false" />
+					<mx:TextInput id="M39" width="80" text=" 0 " editable="false" />
+					<mx:TextInput id="N39" width="80" text=" 0 " editable="false" />
+					<mx:TextInput id="O39" width="80" text=" 0 " editable="false" />
+					<mx:TextInput width="80" text="{parseFloat(L39.text)/2000*parseFloat(K39.text)}" editable="false" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="J40" text="Other Nutrients"  width="125" fontWeight="bold"/>
+					<mx:Label id="K40" text=""  width="80" fontWeight="bold"/>
+					<mx:Label id="L40" text=""  width="80" fontWeight="bold"/>
+					<mx:Label id="M40" text=""  width="80" fontWeight="bold"/>
+					<mx:Label id="N40" text=""  width="80" fontWeight="bold"/>
+					<mx:Label id="O40" text=""  width="80" fontWeight="bold"/>
+					<mx:Label id="P40" text=""  width="80" fontWeight="bold"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="J41" text="Starters :"  width="125"/>
+					<mx:TextInput id="K41" styleName="txtbox" width="80" text=" 0 " />
+					<mx:TextInput id="L41" styleName="txtbox" width="80" text=" 0 " />
+					<mx:TextInput id="M41" width="80" />
+					<mx:TextInput id="N41" width="80" />
+					<mx:TextInput id="O41" width="80" />
+					<mx:TextInput width="80" text="{parseFloat(L41.text)/2000*parseFloat(K41.text)}" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="J42" text="trace minerals :"  width="125"/>
+					<mx:TextInput id="K42" styleName="txtbox" width="80" text=" 0 " />
+					<mx:TextInput id="L42" styleName="txtbox" width="80" text=" 0 " />
+					<mx:TextInput id="M42" width="80" />
+					<mx:TextInput id="N42" width="80" />
+					<mx:TextInput id="O42" width="80" />
+					<mx:TextInput width="80" text="{parseFloat(L42.text)/2000*parseFloat(K42.text)}" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="J43" text="other :"  width="125"/>
+					<mx:TextInput id="K43" styleName="txtbox" width="80" text=" 0 " />
+					<mx:TextInput id="L43" styleName="txtbox" width="80" text=" 0 " />
+					<mx:TextInput id="M43" width="80" />
+					<mx:TextInput id="N43" width="80" />
+					<mx:TextInput id="O43" width="80" />
+					<mx:TextInput width="80" text="{parseFloat(L43.text)/2000*parseFloat(K43.text)}" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label id="J44" text="Total Plant Food Cost :" width="213" />
+					<mx:Text id="L46" width="80" />
+					<mx:Text id="M46" width="80" />
+					<mx:Text id="N46" width="80" />
+					<mx:Text id="O46" width="80" />
+					<mx:Text id="P46" width="80" text="$ - " />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		</mx:HBox>
+		
+		<mx:Canvas width="321" height="171"  y="89" borderColor="#020202" borderStyle="solid" borderThickness="2">
+			<mx:VBox  x="3" y="3"><!--Market Price-->
+				<mx:HBox>
+					<mx:Label id="B46" text="Crop Protection" fontWeight="bold" width="125"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B47" fontWeight="bold"  width="125"/>
+					<mx:Label id="C47" text="Corn"  width="85" fontWeight="bold" />
+					<mx:Label id="D47" text="Soybeans"  width="85" fontWeight="bold" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B48" text="Herbicide :"  width="125"/>
+					<mx:TextInput id="C48" styleName="txtbox" width="85" text="$ 38.00" />
+					<mx:TextInput id="D48" styleName="txtbox" width="85" text="$ 30.00" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B49" text="Insectiside :"  width="125"/>
+					<mx:TextInput id="C49" styleName="txtbox" width="85" text="$ - " />
+					<mx:TextInput id="D49" styleName="txtbox" width="85" text="$ - " />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B50" text="fungicide :"  width="125"/>
+					<mx:TextInput id="C50" styleName="txtbox" width="85" text="$ 23.00" />
+					<mx:TextInput id="D50" styleName="txtbox" width="85" text="$ - 0" />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label id="B51" text="Total Crop Protection :" width="125" />
+					<mx:Text id="C51" width="85" text="$ 61.00" />
+					<mx:Text id="D51" width="85" text="$ 30.00" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+		<mx:Canvas width="321" height="340"  y="89" borderColor="#020202" borderStyle="solid" borderThickness="2">
+			<mx:VBox  x="3" y="3"><!--Market Price-->
+				<mx:HBox>
+					<mx:Label id="B53" text="Custom Services" fontWeight="bold" width="125"/>
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B54" fontWeight="bold"  width="125"/>
+					<mx:Label id="C54" text="Corn"  width="85" fontWeight="bold" />
+					<mx:Label id="D54" text="Soybeans"  width="85" fontWeight="bold" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B55" text="Soil Testing :"  width="125"/>
+					<mx:TextInput id="C55" styleName="txtbox" width="85" text="$ 1.50" />
+					<mx:TextInput id="D55" styleName="txtbox" width="85" text="$ 1.50" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B56" text="N Application :"  width="125"/>
+					<mx:TextInput id="C56" styleName="txtbox" width="85" text="$ 10.00" />
+					<mx:TextInput id="D56" styleName="txtbox" width="85" text="$ - " />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B57" text="Dry Application :"  width="125"/>
+					<mx:TextInput id="C57" styleName="txtbox" width="85" text="$ 5.50" />
+					<mx:TextInput id="D57" styleName="txtbox" width="85" text="$ - " />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B58" text="Line Application :"  width="125"/>
+					<mx:TextInput id="C58" styleName="txtbox" width="85" text="$ - " />
+					<mx:TextInput id="D58" styleName="txtbox" width="85" text="$ - " />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B59" text="Preplant :"  width="125"/>
+					<mx:TextInput id="C59" styleName="txtbox" width="85" text="$ 6.50" />
+					<mx:TextInput id="D59" styleName="txtbox" width="85" text="$ - " />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B60" text="Post :"  width="125"/>
+					<mx:TextInput id="C60" styleName="txtbox" width="85" text="$ 6.50" />
+					<mx:TextInput id="D60" styleName="txtbox" width="85" text="$ 6.50" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B61" text="Aerial :"  width="125"/>
+					<mx:TextInput id="C61" styleName="txtbox" width="85" text="$ 9.50" />
+					<mx:TextInput id="D61" styleName="txtbox" width="85" text="$ - " />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B62" text="Crop Scouting :"  width="125"/>
+					<mx:TextInput id="C62" styleName="txtbox" width="85" text="$ 3.00" />
+					<mx:TextInput id="D62" styleName="txtbox" width="85" text="$ 3.00" />
+				</mx:HBox>
+				<mx:HBox>
+					<mx:Label id="B63" text="Other :"  width="125"/>
+					<mx:TextInput id="C63" styleName="txtbox" width="85" text="$ - " />
+					<mx:TextInput id="D63" styleName="txtbox" width="85" text="$ - " />
+				</mx:HBox>
+				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
+					<mx:Label id="B64" text="Total Custom Services :" width="125" />
+					<mx:Text id="C64" width="85" text="$ 42.50" />
+					<mx:Text id="D64" width="85" text="$ 11.00" />
+				</mx:HBox>
+			</mx:VBox>
+		</mx:Canvas>
+	</mx:VBox>
+</mx:Canvas>
