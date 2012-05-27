@@ -30,11 +30,13 @@
 			{
 				//var xmlLoaderInit:URLLoader = new URLLoader(new URLRequest("http://www.agviewcgi.com/data/bet.xml?" + getTimer()));
 				var xmlLoaderInit:URLLoader = new URLLoader(new URLRequest("http://www.vthinksolution.com/demo/bet.xml?" + getTimer()));
+				cursorManager.setBusyCursor();
 				xmlLoaderInit.addEventListener(Event.COMPLETE, xmlLoaderInitCompleteHandler);
 			}
 			
 			private function xmlLoaderInitCompleteHandler(event:Event):void
 			{
+				cursorManager.removeBusyCursor();
 				var xmlLoaded:XML = XML(event.target.data);
 				
 				_dataManager.xmlData = xmlLoaded;

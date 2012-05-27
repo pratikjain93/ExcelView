@@ -127,12 +127,57 @@ package com.nitishpatel.managers
 		public var G39 : String ="0";
 		public var H39 : String ="15.00";
 		
+		public var C41:String;
+		public var C42:String;
+		public var C43:String;
+		public var D41:String;
+		public var D42:String;
+		public var D43:String;
+		
+		/*Plant food (soya beans) */
+		public var K36:String;
+		public var K37:String;
+		public var K38:String;
+		public var K39:String;
+		public var K41:String;
+		public var K42:String;
+		public var K43:String;
+		public var L41:String;
+		public var L42:String;
+		public var L43:String;
+		
+		/*Crop Protection */
+		public var C48:String;
+		public var C49:String;
+		public var C50:String;
+		public var C51:String;
+		public var D48:String;
+		public var D49:String;
+		public var D50:String;
+		public var D51:String;
+		
 		public var H44 : String;
-		
-		public var C51 : String;
-		public var D51 : String;
-		
+	    /*Customer services */
+		public var C55 : String;
+		public var C56 : String;
+		public var C57 : String;
+		public var C58 : String;
+		public var C59 : String;
+		public var C60 : String;
+		public var C61 : String;
+		public var C62 : String;
+		public var C63 : String;
 		public var C64 : String;
+		
+		public var D55 : String;
+		public var D56 : String;
+		public var D57 : String;
+		public var D58 : String;
+		public var D59 : String;
+		public var D60 : String;
+		public var D61 : String;
+		public var D62 : String;
+		public var D63 : String;
 		public var D64 : String;
 		
 		private function supplierMarketPrice():void

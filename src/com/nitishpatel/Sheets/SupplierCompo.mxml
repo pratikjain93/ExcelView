@@ -37,7 +37,8 @@
 				
 				_supplierSheetManager.E14 = String(parseFloat(E9.text)+parseFloat(F9.text));
 				_supplierSheetManager.F14 = String(parseFloat(E10.text)+parseFloat(F10.text));
-				
+				_supplierSheetManager.E15 = String(parseFloat(E13.text)*parseFloat(E14.text));
+				_supplierSheetManager.F15 = String(parseFloat(F13.text)*parseFloat(F14.text));
 				_supplierSheetManager.E16 = xmlLoaded.suplier.e16;
 				_supplierSheetManager.F16 = xmlLoaded.suplier.f16;
 				_supplierSheetManager.E17 = String(parseFloat(E15.text)+parseFloat(E16.text));
@@ -57,73 +58,87 @@
 				_supplierSheetManager.E24 = String(parseFloat(E21.text) + parseFloat(E22.text) + parseFloat(E23.text));
 				_supplierSheetManager.F24 = String(parseFloat(F21.text) + parseFloat(F22.text) + parseFloat(F23.text));
 				
-				C28.text = xmlLoaded.suplier.c28;
-				C29.text = xmlLoaded.suplier.c29;
-				C30.text = xmlLoaded.suplier.c30;
-				C31.text = xmlLoaded.suplier.c31;
+				_supplierSheetManager.C28 = xmlLoaded.suplier.c28;
+				_supplierSheetManager.C29 = xmlLoaded.suplier.c29;
+				_supplierSheetManager.C30 = xmlLoaded.suplier.c30;
+				_supplierSheetManager.C31 = xmlLoaded.suplier.c31;
 				
-				H28.text = xmlLoaded.suplier.h28;
-				H29.text = xmlLoaded.suplier.h29;
-				H30.text = xmlLoaded.suplier.h30;
-				H31.text = xmlLoaded.suplier.h31;
+				_supplierSheetManager.D28 = String(B28.selectedItem.analysis*parseFloat(C28.text));
+				_supplierSheetManager.D29 = String(B29.selectedItem.analysis*parseFloat(C29.text));
+				_supplierSheetManager.D30 = String(B30.selectedItem.analysis*parseFloat(C30.text));
+				_supplierSheetManager.D31 = String(B31.selectedItem.analysis*parseFloat(C31.text));
 				
+				_supplierSheetManager.E28 = String(B28.selectedItem.price);
+				_supplierSheetManager.E29 = String(B29.selectedItem.price);
+				_supplierSheetManager.E30 = String(B30.selectedItem.price);
+				_supplierSheetManager.E31 = String(B31.selectedItem.price);
 				
-				C36.text = xmlLoaded.suplier.c36;
-				C37.text = xmlLoaded.suplier.c37;
-				C38.text = xmlLoaded.suplier.c38;
-				C39.text = xmlLoaded.suplier.c39;
+				_supplierSheetManager.F28 = String(parseFloat(E28.text)/2000*parseFloat(C28.text));
+				_supplierSheetManager.F29 = String(parseFloat(E29.text)/2000*parseFloat(C29.text));
+				_supplierSheetManager.F30 = String(parseFloat(E30.text)/2000*parseFloat(C30.text));
+				_supplierSheetManager.F31 = String(parseFloat(E31.text)/2000*parseFloat(C31.text));
 				
-				
-				C41.text = xmlLoaded.suplier.c41;
-				C42.text = xmlLoaded.suplier.c42;
-				C43.text = xmlLoaded.suplier.c43;
-				D41.text = xmlLoaded.suplier.d41;
-				D42.text = xmlLoaded.suplier.d42;
-				D43.text = xmlLoaded.suplier.d43;
-				
-				
-				K36.text = xmlLoaded.suplier.k36;
-				K37.text = xmlLoaded.suplier.k37;
-				K38.text = xmlLoaded.suplier.k38;
-				K39.text = xmlLoaded.suplier.k39;
+				_supplierSheetManager.H28 = xmlLoaded.suplier.h28;
+				_supplierSheetManager.H29 = xmlLoaded.suplier.h29;
+				_supplierSheetManager.H30 = xmlLoaded.suplier.h30;
+				_supplierSheetManager.H31 = xmlLoaded.suplier.h31;
 				
 				
-				K41.text = xmlLoaded.suplier.k41;
-				K42.text = xmlLoaded.suplier.k42;
-				K43.text = xmlLoaded.suplier.k43;
-				L41.text = xmlLoaded.suplier.l41;
-				L42.text = xmlLoaded.suplier.l42;
-				L43.text = xmlLoaded.suplier.l43;
+				_supplierSheetManager.C36 = xmlLoaded.suplier.c36;
+				_supplierSheetManager.C37 = xmlLoaded.suplier.c37;
+				_supplierSheetManager.C38 = xmlLoaded.suplier.c38;
+				_supplierSheetManager.C39 = xmlLoaded.suplier.c39;
 				
 				
-				C48.text = xmlLoaded.suplier.c48;
-				C49.text = xmlLoaded.suplier.c49;
-				C50.text = xmlLoaded.suplier.c50;
-				D48.text = xmlLoaded.suplier.d48;
-				D49.text = xmlLoaded.suplier.d49;
-				D50.text = xmlLoaded.suplier.d50;
+				_supplierSheetManager.C41 = xmlLoaded.suplier.c41;
+				_supplierSheetManager.C42 = xmlLoaded.suplier.c42;
+				_supplierSheetManager.C43 = xmlLoaded.suplier.c43;
+				_supplierSheetManager.D41 = xmlLoaded.suplier.d41;
+				_supplierSheetManager.D42 = xmlLoaded.suplier.d42;
+				_supplierSheetManager.D43 = xmlLoaded.suplier.d43;
+				
+				
+				_supplierSheetManager.K36 = xmlLoaded.suplier.k36;
+				_supplierSheetManager.K37 = xmlLoaded.suplier.k37;
+				_supplierSheetManager.K38 = xmlLoaded.suplier.k38;
+				_supplierSheetManager.K39 = xmlLoaded.suplier.k39;
+				
+				
+				_supplierSheetManager.K41 = xmlLoaded.suplier.k41;
+				_supplierSheetManager.K42 = xmlLoaded.suplier.k42;
+				_supplierSheetManager.K43 = xmlLoaded.suplier.k43;
+				_supplierSheetManager.L41 = xmlLoaded.suplier.l41;
+				_supplierSheetManager.L42 = xmlLoaded.suplier.l42;
+				_supplierSheetManager.L43 = xmlLoaded.suplier.l43;
+				
+				
+				_supplierSheetManager.C48 = xmlLoaded.suplier.c48;
+				_supplierSheetManager.C49 = xmlLoaded.suplier.c49;
+				_supplierSheetManager.C50 = xmlLoaded.suplier.c50;
+				_supplierSheetManager.D48 = xmlLoaded.suplier.d48;
+				_supplierSheetManager.D49 = xmlLoaded.suplier.d49;
+				_supplierSheetManager.D50 = xmlLoaded.suplier.d50;
 			
 				
-				C55.text = xmlLoaded.suplier.c55;
-				C56.text = xmlLoaded.suplier.c56;
-				C57.text = xmlLoaded.suplier.c57;
-				C58.text = xmlLoaded.suplier.c58;
-				C59.text = xmlLoaded.suplier.c59;
-				C60.text = xmlLoaded.suplier.c60;
-				C61.text = xmlLoaded.suplier.c61;
-				C62.text = xmlLoaded.suplier.c62;
-				C63.text = xmlLoaded.suplier.c63;
+				_supplierSheetManager.C55 = xmlLoaded.suplier.c55;
+				_supplierSheetManager.C56 = xmlLoaded.suplier.c56;
+				_supplierSheetManager.C57 = xmlLoaded.suplier.c57;
+				_supplierSheetManager.C58 = xmlLoaded.suplier.c58;
+				_supplierSheetManager.C59 = xmlLoaded.suplier.c59;
+				_supplierSheetManager.C60 = xmlLoaded.suplier.c60;
+				_supplierSheetManager.C61 = xmlLoaded.suplier.c61;
+				_supplierSheetManager.C62 = xmlLoaded.suplier.c62;
+				_supplierSheetManager.C63 = xmlLoaded.suplier.c63;
 				
-				
-				D55.text = xmlLoaded.suplier.d55;
-				D56.text = xmlLoaded.suplier.d56;
-				D57.text = xmlLoaded.suplier.d57;
-				D58.text = xmlLoaded.suplier.d58;
-				D59.text = xmlLoaded.suplier.d59;
-				D60.text = xmlLoaded.suplier.d60;
-				D61.text = xmlLoaded.suplier.d61;
-				D62.text = xmlLoaded.suplier.d62;
-				D63.text = xmlLoaded.suplier.d63;
+				_supplierSheetManager.D55 = xmlLoaded.suplier.d55;
+				_supplierSheetManager.D56 = xmlLoaded.suplier.d56;
+				_supplierSheetManager.D57 = xmlLoaded.suplier.d57;
+				_supplierSheetManager.D58 = xmlLoaded.suplier.d58;
+				_supplierSheetManager.D59 = xmlLoaded.suplier.d59;
+				_supplierSheetManager.D60 = xmlLoaded.suplier.d60;
+				_supplierSheetManager.D61 = xmlLoaded.suplier.d61;
+				_supplierSheetManager.D62 = xmlLoaded.suplier.d62;
+				_supplierSheetManager.D63 = xmlLoaded.suplier.d63;
 			}
 			
 			
@@ -193,8 +208,8 @@
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B15" text="Crop Revenue :"  width="125"/>
-					<mx:TextInput id="E15" width="85" text="{parseFloat(E13.text)*parseFloat(E14.text)}" editable="false" />
-					<mx:TextInput id="F15" width="85" text="{parseFloat(F13.text)*parseFloat(F14.text)}" editable="false" />
+					<mx:TextInput id="E15" width="85" text="{_supplierSheetManager.E15}" editable="false" />
+					<mx:TextInput id="F15" width="85" text="{_supplierSheetManager.F15}" editable="false" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B16" text="Gov. Payment/acre :" width="125" />
@@ -265,31 +280,31 @@
 				</mx:HBox>
 				<mx:HBox>
 					<mx:ComboBox id="B28" width="125" dataProvider="{_dataSheetManager.nitrogenManagementPlan}"/>
-					<mx:TextInput id="C28" styleName="txtbox" width="80" text="200" />
-					<mx:TextInput id="D28" width="80" text="{B28.selectedItem.analysis*parseFloat(C28.text)}" editable="false" />
-					<mx:TextInput id="E28" width="80" text="{B28.selectedItem.price}" editable="false" />
-					<mx:TextInput width="80" text="{parseFloat(E28.text)/2000*parseFloat(C28.text)}" editable="false"  id="F28"/>
+					<mx:TextInput id="C28" styleName="txtbox" width="80" text="{_supplierSheetManager.C28}" />
+					<mx:TextInput id="D28" width="80" text="{_supplierSheetManager.D28}" editable="false" />
+					<mx:TextInput id="E28" width="80" text="{_supplierSheetManager.E28}" editable="false" />
+					<mx:TextInput id="F28" width="80" text="{_supplierSheetManager.F28}" editable="false" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:ComboBox id="B29" width="125" dataProvider="{_dataSheetManager.nitrogenManagementPlan}"/>
 					<mx:TextInput id="C29" styleName="txtbox" width="80" text="110" />
-					<mx:TextInput id="D29" width="80" text="{B29.selectedItem.analysis*parseFloat(C29.text)}" editable="false" />
-					<mx:TextInput id="E29" width="80" text="{B29.selectedItem.price}" editable="false" />
-					<mx:TextInput width="80" text="{parseFloat(E29.text)/2000*parseFloat(C29.text)}" editable="false"  id="F29"/>
+					<mx:TextInput id="D29" width="80" text="{_supplierSheetManager.D29}" editable="false" />
+					<mx:TextInput id="E29" width="80" text="{_supplierSheetManager.E29}" editable="false" />
+					<mx:TextInput width="80" text="{_supplierSheetManager.F29}" editable="false"  id="F29"/>
 				</mx:HBox>
 				<mx:HBox>
 					<mx:ComboBox id="B30" width="125" dataProvider="{_dataSheetManager.nitrogenManagementPlan}"/>
 					<mx:TextInput styleName="txtbox" id="C30" width="80" text="0" />
-					<mx:TextInput id="D30" width="80" text="{B30.selectedItem.analysis*parseFloat(C30.text)}" editable="false" />
-					<mx:TextInput id="E30" width="80" text="{B30.selectedItem.price}" editable="false" />
-					<mx:TextInput width="80" text="{parseFloat(E30.text)/2000*parseFloat(C30.text)}" editable="false"  id="F30"/>
+					<mx:TextInput id="D30" width="80" text="{_supplierSheetManager.D30}" editable="false" />
+					<mx:TextInput id="E30" width="80" text="{_supplierSheetManager.E30}" editable="false" />
+					<mx:TextInput width="80" text="{_supplierSheetManager.F30}" editable="false"  id="F30"/>
 				</mx:HBox>
 				<mx:HBox>
 					<mx:ComboBox id="B31" width="125" dataProvider="{_dataSheetManager.nitrogenManagementPlan}"/>
 					<mx:TextInput styleName="txtbox" id="C31" width="80" text="0" />
-					<mx:TextInput id="D31" width="80" text="{B31.selectedItem.analysis*parseFloat(C31.text)}" editable="false" />
-					<mx:TextInput id="E31" width="80" text="{B31.selectedItem.price}" editable="false" />
-					<mx:TextInput width="80" text="{parseFloat(E31.text)/2000*parseFloat(C31.text)}" editable="false"  id="F31"/>
+					<mx:TextInput id="D31" width="80" text="{_supplierSheetManager.D31}" editable="false" />
+					<mx:TextInput id="E31" width="80" text="{_supplierSheetManager.E31}" editable="false" />
+					<mx:TextInput width="80" text="{_supplierSheetManager.F31}" editable="false"  id="F31"/>
 				</mx:HBox>
 				<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle" >
 					<mx:Label id="B32" text="Total N Cost :" width="125"  height="28" />
