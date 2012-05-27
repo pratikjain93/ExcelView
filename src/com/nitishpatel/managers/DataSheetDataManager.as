@@ -73,7 +73,6 @@ package com.nitishpatel.managers
 		{
 			var nsv:NitrogenStabilizersVO;
 			
-			
 			nsv = new NitrogenStabilizersVO();
 			nsv.label = "None";
 			nsv.per = "-";

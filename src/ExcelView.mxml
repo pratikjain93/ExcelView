@@ -8,9 +8,6 @@
 		<![CDATA[
 			import com.nitishpatel.managers.DataManager;
 			
-			
-			
-			
 			private var _dataManager:DataManager = DataManager.getInstance();
 			
 			private function init():void

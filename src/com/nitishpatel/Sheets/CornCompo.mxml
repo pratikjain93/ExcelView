@@ -4,6 +4,8 @@
 	
 	<mx:Script>
 		<![CDATA[
+			import com.nitishpatel.managers.SupplierSheetDataManager;
+			
 			import mx.controls.Alert;
 			
 			
@@ -22,7 +24,8 @@
 											{label:"Profit", revenuePer:13, revenueAmt:135.88}];
 			
 			
-
+			[Bindable]
+			private var _supplierSheetManager : SupplierSheetDataManager = SupplierSheetDataManager.getInstance();
 		]]>
 	</mx:Script>
 	
@@ -66,7 +69,7 @@
 					<mx:VBox y="3" x="3">
 						<mx:HBox>
 							<mx:Label text="Seed Cost  :" id="A10" width="125" />
-							<mx:TextInput editable="true" text="126.00" id="B10" width="80" />
+							<mx:TextInput editable="true" text="{_supplierSheetManager.E9}" id="B10" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="N Cost :" id="A11" width="125" />
