@@ -1,8 +1,14 @@
 package com.nitishpatel.managers
 {
+	import com.nitishpatel.models.CropCareVO;
+	import com.nitishpatel.models.HarvestVO;
 	import com.nitishpatel.models.NitrogenManagementPlanVO;
 	import com.nitishpatel.models.NitrogenStabilizersVO;
 	import com.nitishpatel.models.PlanFoodVO;
+	import com.nitishpatel.models.PlantingVO;
+	import com.nitishpatel.models.PrimaryTrillageVO;
+	import com.nitishpatel.models.SecondaryTrillageVO;
+	import com.nitishpatel.models.SprayingAmmoniaAppVO;
 	
 	import mx.controls.Label;
 
@@ -28,6 +34,12 @@ package com.nitishpatel.managers
 			setupNitrogenManagementPlan();
 			setupNitrogenStabilizers();
 			setupPlanFoods();
+			setupPrimaryTrillage();
+			setupSecondaryTrillage();
+			setupPlanting();
+			setupCropCare();
+			setupSprayingAmmoniaApp();
+			setupHarvest();
 		}
 		
 		public var nitrogenManagementPlan:Array = [];//[{label:"None", analysis:0, price:0}, {label:"NH3", analysis:0.82, price:830},{label:"Solution 28%", analysis:0.28, price:366.63},{label:"Solution 32%", analysis:0.32, price:419},{label:"Urea", analysis:0.46, price:565}];
@@ -72,6 +84,7 @@ package com.nitishpatel.managers
 		private function setupNitrogenStabilizers():void
 		{
 			var nsv:NitrogenStabilizersVO;
+			
 			
 			nsv = new NitrogenStabilizersVO();
 			nsv.label = "None";
@@ -157,7 +170,173 @@ package com.nitishpatel.managers
 			planFood.push(pfv);
 		}
 		
+		public var primaryTrillage:Array = [];
+		private function setupPrimaryTrillage():void
+		{
+			var pt : PrimaryTrillageVO = new PrimaryTrillageVO();
+			
+			pt.name = "Chisel Plow";
+			pt.value = 10.70;
+			primaryTrillage.push(pt);
+			
+			pt = new PrimaryTrillageVO();
+			pt.name = "Disk Chiesel";
+			pt.value = 14.00;
+			primaryTrillage.push(pt);
+			
+			pt = new PrimaryTrillageVO();
+			pt.name = "Moldboard Plow";
+			pt.value = 21.30;
+			primaryTrillage.push(pt);
+			
+			pt = new PrimaryTrillageVO();
+			pt.name = "None";
+			pt.value = 0;
+			primaryTrillage.push(pt);
+			
+			pt = new PrimaryTrillageVO();
+			pt.name = "Offset Disk";
+			pt.value = 10.10;
+			primaryTrillage.push(pt);
+			
+			pt = new PrimaryTrillageVO();
+			pt.name = "V-Ripper";
+			pt.value = 13.30;
+			primaryTrillage.push(pt);
+		}
 		
+		public var secondaryTrillage : Array = [];
+		private function setupSecondaryTrillage():void
+		{
+			var st : SecondaryTrillageVO;
+			
+			st = new SecondaryTrillageVO();
+			st.name = "Field Cultivator";
+			st.value = 6.20;
+			secondaryTrillage.push(st);
+			
+			st = new SecondaryTrillageVO();
+			st.name = "Mulch Finisher";
+			st.value = 10.40; 
+			secondaryTrillage.push(st);
+			
+			st = new SecondaryTrillageVO();
+			st.name = "None";
+			st.value = 0;
+			secondaryTrillage.push(st);
+			
+			st = new SecondaryTrillageVO();
+			st.name = "Tandem Disk";
+			st.value = 8.20;
+			secondaryTrillage.push(st);
+			
+		}
+		
+		
+	
+		public var planting : Array = [];
+		private function setupPlanting():void
+		{
+			var ptg : PlantingVO ;
+			
+			ptg = new PlantingVO();
+			ptg.name = "Coventional";
+			ptg.value = 8.30;
+			planting.push(ptg);
+			
+			ptg = new PlantingVO();
+			ptg.name = "Grain Drill";
+			ptg.value = 10.80;
+			planting.push(ptg);
+			
+			ptg = new PlantingVO();
+			ptg.name = "No till Drill";
+			ptg.value = 15.60;
+			planting.push(ptg);
+			
+			ptg = new PlantingVO();
+			ptg.name = "No till Drill";
+			ptg.value = 10.50;
+			planting.push(ptg);
+			
+			ptg = new PlantingVO();
+			ptg.name = "None";
+			ptg.value = 0;
+			planting.push(ptg);
+			
+			ptg = new PlantingVO();
+			ptg.name = "Split Row";
+			ptg.value = 10.90;
+			planting.push(ptg);
+		}
+		
+		public var cropCare : Array = [];
+		private function setupCropCare():void
+		{
+			var cc :CropCareVO ;
+			
+			cc = new CropCareVO();
+			cc.name = "None";
+			cc.value = 0;
+			cropCare.push(cc);
+			
+			cc = new CropCareVO();
+			cc.name = "Rotary Hoe";
+			cc.value = 4.00;
+			cropCare.push(cc);
+			
+			cc = new CropCareVO();
+			cc.name = "Row Cultivating";
+			cc.value = 7.50;
+			cropCare.push(cc);
+		}
+		
+		public var sprayingAmmoniaApp : Array = [];
+		private function setupSprayingAmmoniaApp():void
+		{
+			var saa : SprayingAmmoniaAppVO ;
+			
+			saa = new SprayingAmmoniaAppVO();
+			saa.name = "Anhydrous Ammonia";
+			saa.value = 7.40;
+			sprayingAmmoniaApp.push(saa);
+			
+			saa = new SprayingAmmoniaAppVO();
+			saa.name = "None";
+			saa.value = 0;
+			sprayingAmmoniaApp.push(saa);
+			
+			saa = new SprayingAmmoniaAppVO();
+			saa.name = "Pull Type";
+			saa.value = 3.20;
+			sprayingAmmoniaApp.push(saa);
+			
+			saa = new SprayingAmmoniaAppVO();
+			saa.name = "Self Propelled";
+			saa.value = 3.10;
+			sprayingAmmoniaApp.push(saa);
+		}
+		
+		public var harvest : Array = [];
+		private function setupHarvest():void
+		{
+			var hvo : HarvestVO;
+			
+			hvo = new HarvestVO();
+			hvo.name = "Combine Beans";
+			hvo.value = 26.30;
+			harvest.push(hvo);
+			
+			hvo = new HarvestVO();
+			hvo.name = "Combine Corn";
+			hvo.value = 31.10;
+			harvest.push(hvo);
+			
+			hvo = new HarvestVO();
+			hvo.name = "None";
+			hvo.value = 0;
+			harvest.push(hvo);
+		}
 		public var C6:Number = 0.82;
 		public var C7:Number = 0;
 		public var C8:Number = 0.28;

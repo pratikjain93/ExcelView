@@ -18,7 +18,7 @@
 				}
 			}
 			
-			private function renderData():void
+			public function renderData():void
 			{
 				var xmlData:XMLList = _dataManager.xmlData.data;
 				
@@ -42,6 +42,13 @@
 				G26.text = xmlData.g26;
 				
 				
+				B30.text = xmlData.b30;
+				B31.text = xmlData.b31;
+				B32.text = xmlData.b32;
+				B33.text = xmlData.b33;
+				B34.text = xmlData.b34;
+				B35.text = xmlData.b35;
+				
 				C30.text = xmlData.c30;
 				C31.text = xmlData.c31;
 				C32.text = xmlData.c32;
@@ -49,12 +56,21 @@
 				C34.text = xmlData.c34;
 				C35.text = xmlData.c35;
 				
+				B38.text = xmlData.b38;
+				B39.text = xmlData.b39;
+				B40.text = xmlData.b40;
+				B41.text = xmlData.b41;
 				C38.text = xmlData.c38;
 				C39.text = xmlData.c39;
 				C40.text = xmlData.c40;
 				C41.text = xmlData.c41;
 				
-				
+				B44.text = xmlData.b44;
+				B45.text = xmlData.b45;
+				B46.text = xmlData.b46;
+				B47.text = xmlData.b47;
+				B48.text = xmlData.b48;
+				B49.text = xmlData.b49;
 				C44.text = xmlData.c44;
 				C45.text = xmlData.c45;
 				C46.text = xmlData.c46;
@@ -62,18 +78,26 @@
 				C48.text = xmlData.c48;
 				C49.text = xmlData.c49;
 				
-				
+				B52.text = xmlData.b52;
+				B53.text = xmlData.b53;
+				B54.text = xmlData.b54;
 				C52.text = xmlData.c52;
 				C53.text = xmlData.c53;
 				C54.text = xmlData.c54;
 				
 				
+				B57.text = xmlData.b57;
+				B58.text = xmlData.b58;
+				B59.text = xmlData.b59;
+				B60.text = xmlData.b60;
 				C57.text = xmlData.c57;
 				C58.text = xmlData.c58;
 				C59.text = xmlData.c59;
 				C60.text = xmlData.c60;
 				
-				
+				B63.text = xmlData.b63;
+				B64.text = xmlData.b64;
+				B65.text = xmlData.b65;
 				C63.text = xmlData.c63;
 				C64.text = xmlData.c64;
 				C65.text = xmlData.c65;
@@ -240,28 +264,28 @@
 					<mx:Label text="Primary Tillage" id="B29" fontWeight="bold" width="200" />
 				</mx:HBox>
 				<mx:HBox>
-					<mx:Label id="B30" text="Chisel Plow :"  width="125"/>
-					<mx:TextInput id="C30" styleName="txtbox" width="80" text="$ 10.70" />
+					<mx:Label id="B30" text="Chisel Plow :"  width="125" />
+					<mx:TextInput id="C30" styleName="txtbox" width="80" text="$10.70" change="_dataSheetManager.primaryTrillage[0].value = parseFloat(C30.text)" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B31" text="Disk Chiesel :" width="125" />
-					<mx:TextInput id="C31" styleName="txtbox" width="80" text="$ 14.00" />
+					<mx:TextInput id="C31" styleName="txtbox" width="80" text="$ 14.00" change="_dataSheetManager.primaryTrillage[1].value = parseFloat(C31.text)" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B32" text="Moldboard Plow :"  width="125"/>
-					<mx:TextInput id="C32" styleName="txtbox" width="80" text="$ 21.30" />
+					<mx:TextInput id="C32" styleName="txtbox" width="80" text="$ 21.30" change="_dataSheetManager.primaryTrillage[2].value = parseFloat(C32.text)" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B33" text="None :" width="125" />
-					<mx:TextInput id="C33" styleName="txtbox" width="80" text="$ - " />
+					<mx:TextInput id="C33" styleName="txtbox" width="80" text="$ - " change="_dataSheetManager.primaryTrillage[3].value = parseFloat(C32.text)" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B34" text="Offset Disk :" width="125" />
-					<mx:TextInput id="C34" styleName="txtbox" width="80" text="$ 10.10" />
+					<mx:TextInput id="C34" styleName="txtbox" width="80" text="$ 10.10" change="_dataSheetManager.primaryTrillage[4].value = parseFloat(C32.text)" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B35" text="V-Ripper :" width="125" />
-					<mx:TextInput id="C35" styleName="txtbox" width="80" text="$ 13.30" />
+					<mx:TextInput id="C35" styleName="txtbox" width="80" text="$ 13.30" change="_dataSheetManager.primaryTrillage[5].value = parseFloat(C32.text)" />
 				</mx:HBox>
 			</mx:VBox>
 		</mx:Canvas>
@@ -272,19 +296,19 @@
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B38" text="Field Cultivator :"  width="125"/>
-					<mx:TextInput id="C38" styleName="txtbox" width="80" text="$ 6.20" />
+					<mx:TextInput id="C38" styleName="txtbox" width="80" text="$ 6.20" change="_dataSheetManager.secondaryTrillage[0].value = parseFloat(C38.text)"  />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B39" text="Mulch Finisher :" width="125" />
-					<mx:TextInput id="C39" styleName="txtbox" width="80" text="$ 10.40" />
+					<mx:TextInput id="C39" styleName="txtbox" width="80" text="$ 10.40" change="_dataSheetManager.secondaryTrillage[1].value = parseFloat(C39.text)"/>
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B40" text="None :"  width="125"/>
-					<mx:TextInput id="C40" styleName="txtbox" width="80" text="$ - " />
+					<mx:TextInput id="C40" styleName="txtbox" width="80" text="$ - " change="_dataSheetManager.secondaryTrillage[2].value = parseFloat(C40.text)" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B41" text="Tandem Disk :" width="125" />
-					<mx:TextInput id="C41" styleName="txtbox" width="80" text="$ 8.20" />
+					<mx:TextInput id="C41" styleName="txtbox" width="80" text="$ 8.20" change="_dataSheetManager.secondaryTrillage[3].value = parseFloat(C41.text)"/>
 				</mx:HBox>
 			</mx:VBox>
 		</mx:Canvas>
@@ -295,27 +319,27 @@
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B44" text="Coventional :"  width="125"/>
-					<mx:TextInput id="C44" styleName="txtbox" width="80" text="$ 8.30" />
+					<mx:TextInput id="C44" styleName="txtbox" width="80" text="$ 8.30" change="_dataSheetManager.planting[0].value = parseFloat(C44.text)" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B45" text="Grain Drill :" width="125" />
-					<mx:TextInput id="C45" styleName="txtbox" width="80" text="$ 10.80" />
+					<mx:TextInput id="C45" styleName="txtbox" width="80" text="$ 10.80" change="_dataSheetManager.planting[1].value = parseFloat(C45.text)" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B46" text="No till Drill :"  width="125"/>
-					<mx:TextInput id="C46" styleName="txtbox" width="80" text="$ 15.60" />
+					<mx:TextInput id="C46" styleName="txtbox" width="80" text="$ 15.60" change="_dataSheetManager.planting[2].value = parseFloat(C46.text)"/>
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B47" text="No Till Planter :" width="125" />
-					<mx:TextInput id="C47" styleName="txtbox" width="80" text="$ 10.50" />
+					<mx:TextInput id="C47" styleName="txtbox" width="80" text="$ 10.50" change="_dataSheetManager.planting[3].value = parseFloat(C47.text)" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B48" text="None :" width="125" />
-					<mx:TextInput id="C48" styleName="txtbox" width="80" text="$ - " />
+					<mx:TextInput id="C48" styleName="txtbox" width="80" text="$ - " change="_dataSheetManager.planting[4].value = parseFloat(C48.text)"/>
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B49" text="Split Row :" width="125" />
-					<mx:TextInput id="C49" styleName="txtbox" width="80" text="$ 10.90" />
+					<mx:TextInput id="C49" styleName="txtbox" width="80" text="$ 10.90" change="_dataSheetManager.planting[0].value = parseFloat(C49.text)" />
 				</mx:HBox>
 			</mx:VBox>
 		</mx:Canvas>
@@ -326,15 +350,15 @@
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B52" text="None :"  width="125"/>
-					<mx:TextInput id="C52" styleName="txtbox" width="80" text="$ - " />
+					<mx:TextInput id="C52" styleName="txtbox" width="80" text="$ - " change="_dataSheetManager.cropCare[0].value = parseFloat(C52.text)" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B53" text="Rotary Hoe :" width="125" />
-					<mx:TextInput id="C53" styleName="txtbox" width="80" text="$ 4.00" />
+					<mx:TextInput id="C53" styleName="txtbox" width="80" text="$ 4.00" change="_dataSheetManager.cropCare[1].value = parseFloat(C53.text)"/>
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B54" text="Row Cultivating :"  width="125"/>
-					<mx:TextInput id="C54" styleName="txtbox" width="80" text="$ 7.50" />
+					<mx:TextInput id="C54" styleName="txtbox" width="80" text="$ 7.50" change="_dataSheetManager.cropCare[2].value = parseFloat(C54.text)"/>
 				</mx:HBox>
 			</mx:VBox>
 		</mx:Canvas>
@@ -345,19 +369,19 @@
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B57" text="Anhydrous Ammonia :"  width="125"/>
-					<mx:TextInput id="C57" styleName="txtbox" width="80" text="$ 7.40" />
+					<mx:TextInput id="C57" styleName="txtbox" width="80" text="$ 7.40" change="_dataSheetManager.sprayingAmmoniaApp[0].value = parseFloat(C57.text)" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B58" text="None :" width="125" />
-					<mx:TextInput id="C58" styleName="txtbox" width="80" text="$ - " />
+					<mx:TextInput id="C58" styleName="txtbox" width="80" text="$ - " change="_dataSheetManager.sprayingAmmoniaApp[1].value = parseFloat(C58.text)"/>
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B59" text="Pull Type :"  width="125"/>
-					<mx:TextInput id="C59" styleName="txtbox" width="80" text="$ 3.20" />
+					<mx:TextInput id="C59" styleName="txtbox" width="80" text="$ 3.20" change="_dataSheetManager.sprayingAmmoniaApp[2].value = parseFloat(C59.text)"/>
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B60" text="Self Propelled :" width="125" />
-					<mx:TextInput id="C60" styleName="txtbox" width="80" text="$ 3.10" />
+					<mx:TextInput id="C60" styleName="txtbox" width="80" text="$ 3.10" change="_dataSheetManager.sprayingAmmoniaApp[3].value = parseFloat(C60.text)"/>
 				</mx:HBox>
 			</mx:VBox>
 		</mx:Canvas>
@@ -368,15 +392,15 @@
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B63" text="Combine Beans :"  width="125"/>
-					<mx:TextInput id="C63" styleName="txtbox" width="80" text="$ 26.30" />
+					<mx:TextInput id="C63" styleName="txtbox" width="80" text="$ 26.30" change="_dataSheetManager.harvest[0].value = parseFloat(C63.text)" />
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B64" text="Combine Corn :" width="125" />
-					<mx:TextInput id="C64" styleName="txtbox" width="80" text="$ 31.00" />
+					<mx:TextInput id="C64" styleName="txtbox" width="80" text="$ 31.00" change="_dataSheetManager.harvest[1].value = parseFloat(C64.text)"/>
 				</mx:HBox>
 				<mx:HBox>
 					<mx:Label id="B65" text="None :"  width="125"/>
-					<mx:TextInput id="C65" styleName="txtbox" width="80" text="$ - " />
+					<mx:TextInput id="C65" styleName="txtbox" width="80" text="$ - " change="_dataSheetManager.harvest[2].value = parseFloat(C65.text)"/>
 				</mx:HBox>
 			</mx:VBox>
 		</mx:Canvas>

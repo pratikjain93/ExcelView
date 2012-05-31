@@ -9,7 +9,7 @@
 		[Bindable]private var editTrue : Boolean = true;
 		[Bindable]private var editFalse : Boolean = false;
 		
-		
+		[Bindable]
 		private var _dataManager:DataManager = DataManager.getInstance();
 		
 		protected function creationCompleteHandler():void
@@ -20,10 +20,10 @@
 			}
 		}
 		
-		private function renderData():void
+		public function renderData():void
 		{
 			var xmlData:XMLList = _dataManager.xmlData.grower;
-			
+			trace("xml data: ",xmlData);
 			c11.text = xmlData.c11;
 			d11.text = xmlData.d11;
 			

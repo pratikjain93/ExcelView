@@ -7,7 +7,15 @@
 			import com.nitishpatel.managers.SupplierSheetDataManager;
 			
 			import mx.controls.Alert;
-			
+			import mx.core.Application;
+			[Bindable]
+			public var dataObj : DataCompo = Application.application.compoData;
+			[Bindable]
+			public var suppObj : SupplierCompo = Application.application.compoSupp;
+			[Bindable]
+			public var growerObj : GrowerCompo = Application.application.compoGrow;
+			[Bindable]
+			public var machineryObj : MachineryCompo = Application.application.compoMachine;
 			
 			private var _columnChart:Array = [{label:"Seed Cost", revenuePer:12, revenueAmt:126}, 
 											{label:"N Cost", revenuePer:11, revenueAmt:118.17}, 
@@ -23,10 +31,9 @@
 											{label:"Land Cost", revenuePer:23, revenueAmt:235},
 											{label:"Profit", revenuePer:13, revenueAmt:135.88}];
 			
-			
-			[Bindable]
-			private var _supplierSheetManager : SupplierSheetDataManager = SupplierSheetDataManager.getInstance();
 		]]>
+		
+		
 	</mx:Script>
 	
 	
@@ -69,31 +76,31 @@
 					<mx:VBox y="3" x="3">
 						<mx:HBox>
 							<mx:Label text="Seed Cost  :" id="A10" width="125" />
-							<mx:TextInput editable="true" text="{_supplierSheetManager.E9}" id="B10" width="80" />
+							<mx:TextInput editable="true" text="{suppObj.E24.text}" id="B10" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="N Cost :" id="A11" width="125" />
-							<mx:TextInput editable="false" text="106.05" id="B11" width="80" />
+							<mx:TextInput editable="false" text="{suppObj.F24.text}" id="B11" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="N Stabilizer Cost :" id="A12" width="125" />
-							<mx:TextInput editable="false" text="12.13" id="B12" width="80" />
+							<mx:TextInput editable="false" text="{suppObj.K32.text}" id="B12" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="Plant Food Cost :" id="A13" width="125" />
-							<mx:TextInput editable="false" text="143.75" id="B13" width="80" />
+							<mx:TextInput editable="false" text="{suppObj.H44.text}" id="B13" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="Crop Protection :" id="A14" width="125" />
-							<mx:TextInput editable="false" text="61.00" id="B14" width="80" />
+							<mx:TextInput editable="false" text="{suppObj.C51.text}" id="B14" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="Custom Service :" id="A15" width="125" />
-							<mx:TextInput editable="false" text="42.50" id="B15" width="80" />
+							<mx:TextInput editable="false" text="{suppObj.C64.text}" id="B15" width="80" />
 						</mx:HBox>
 						<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle">
 							<mx:Label text="Total Supplier Cost :" id="A16" width="125" />
-							<mx:TextInput editable="false" text="491.42"  id="B16" width="80" />
+							<mx:TextInput editable="false" text="{parseFloat(B10.text)+parseFloat(B11.text)+parseFloat(B12.text)+parseFloat(B13.text)+parseFloat(B14.text)+parseFloat(B15.text)}"  id="B16" width="80" />
 						</mx:HBox>
 					</mx:VBox>
 				</mx:Canvas>
@@ -101,50 +108,50 @@
 					<mx:VBox y="3" x="3">
 						<mx:HBox>
 							<mx:Label text="Insurance :" id="A18" width="125" />
-							<mx:TextInput editable="false" text="33.00" id="B18" width="80" />
+							<mx:TextInput editable="false" text="{growerObj.c22.text}" id="B18" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="Misc. Cost :" id="A19" width="125" />
-							<mx:TextInput editable="false" text="- " id="B19" width="80" />
+							<mx:TextInput editable="false" text="{growerObj.c25.text}" id="B19" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="Total Variable :" id="A20" width="125" />
-							<mx:TextInput editable="false" text="524.42" id="B20" width="80" />
+							<mx:TextInput editable="false" text="{parseFloat(B16.text)+parseFloat(B18.text)+parseFloat(B19.text)}" id="B20" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="Interest :" id="A21" width="125" />
-							<mx:TextInput editable="false" text="23.60" id="B21" width="80" />
+							<mx:TextInput editable="false" text="{parseFloat(B20.text)*parseFloat(growerObj.c26.text)}" id="B21" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="Machinery Cost :" id="A22" width="125" />
-							<mx:TextInput editable="false" text=" 56.30" id="B22" width="80" />
+							<mx:TextInput editable="false" text="{machineryObj.C42.text}" id="B22" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="Drying :" id="A23" width="125" />
-							<mx:TextInput editable="false" text="28.50" id="B23" width="80" />
+							<mx:TextInput editable="false" text="{parseFloat(B6.text)*parseFloat(growerObj.c23.text)}" id="B23" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="Trucking :" id="A24" width="125" />
-							<mx:TextInput editable="false" text="28.50"  id="B24" width="80" />
+							<mx:TextInput editable="false" text="{parseFloat(B6.text)*parseFloat(growerObj.c24.text)}"  id="B24" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="Non Land Cost :" id="A25" width="125" />
-							<mx:TextInput editable="false" text="661.32" id="B25" width="80" />
+							<mx:TextInput editable="false" text="{parseFloat(B20.text)+parseFloat(B21.text)+parseFloat(B22.text)+parseFloat(B23.text)+parseFloat(B24.text)}" id="B25" width="80" />
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="Land Cost :" id="A26" width="125" />
-							<mx:TextInput editable="false" text="235.00" id="B26" width="80" />
+							<mx:TextInput editable="false" text="{growerObj.c18.text}" id="B26" width="80" />
 						</mx:HBox>
 						<mx:HBox backgroundColor="gray" height="30" verticalAlign="middle">
 							<mx:Label text="Total Expense :" id="A27" width="125" fontWeight="bold" />
-							<mx:TextInput editable="false" text="896.23"  id="B27" width="80" fontWeight="bold" />
+							<mx:TextInput editable="false" text="{parseFloat(B25.text)+parseFloat(B26.text)}"  id="B27" width="80" fontWeight="bold" />
 						</mx:HBox>
 						<mx:HBox>
 							
 						</mx:HBox>
 						<mx:HBox>
 							<mx:Label text="Net Income :" id="A29" width="125" fontWeight="bold" />
-							<mx:TextInput editable="false" text="135.38"  id="B29" width="80" fontWeight="bold" />
+							<mx:TextInput editable="false" text="{parseFloat(B8.text)-parseFloat(B27.text)}"  id="B29" width="80" fontWeight="bold" />
 						</mx:HBox>
 					</mx:VBox>
 				</mx:Canvas>
@@ -174,7 +181,7 @@
 							</mx:HBox>
 							<mx:HBox>
 								<mx:TextInput text="{B6.text}" editable="false" id="D9" width="85" />
-								<mx:TextInput text="1031.70" editable="false" id="E9" width="85" />
+								<mx:TextInput text="{parseFloat(D9.text)*parseFloat(suppObj.E14.text)+parseFloat(suppObj.E16.text)}" editable="false" id="E9" width="85" />
 								<mx:TextInput text="{B25.text}" editable="false" id="F9" width="85" />
 								<mx:TextInput text="{B26.text}" editable="false" id="G9" width="85" />
 								<mx:TextInput text="0" editable="false" id="H9" width="104" />
@@ -185,55 +192,55 @@
 							</mx:HBox>
 							<mx:HBox>
 								<mx:TextInput text="{parseInt(D9.text)+10}" editable="false" id="D10" width="85" />
-								<mx:TextInput text="1086.00" editable="false" id="E10" width="85" />
+								<mx:TextInput text="{parseFloat(D10.text)*parseFloat(suppObj.E14.text)+parseFloat(suppObj.E16.text)}" editable="false" id="E10" width="85" />
 								<mx:TextInput text="{F9.text}" editable="false" id="F10" width="85" />
 								<mx:TextInput text="{G9.text}" editable="false" id="G10" width="85" />
-								<mx:TextInput text="1.50" editable="false" id="H10" width="104" />
-								<mx:TextInput text="1.50" editable="false" id="I10" width="114" />
+								<mx:TextInput text="{(parseFloat(D10.text)-parseFloat(D9.text)	)*parseFloat(growerObj.c23.text)}" editable="false" id="H10" width="104" />
+								<mx:TextInput text="{(parseFloat(D10.text)-parseFloat(D9.text)	)*parseFloat(growerObj.c24.text)}" editable="false" id="I10" width="114" />
 								<mx:TextInput text="{parseInt(F10.text)+parseInt(G10.text)+parseInt(H10.text)+parseInt(I10.text)}" editable="false" id="J10" width="85" />
 								<mx:TextInput text="{parseInt(E10.text)-parseInt(F10.text)-parseInt(G10.text)-parseInt(H10.text)-parseInt(I10.text)}" editable="false" id="K10" width="85" />
 								<mx:TextInput text="{parseInt(J10.text)/parseInt(D10.text)}" editable="false" id="L10" width="85" />
 							</mx:HBox>
 							<mx:HBox>
 								<mx:TextInput text="{parseInt(D10.text)+10}" editable="false" id="D11" width="85" />
-								<mx:TextInput text="1140.30" editable="false" id="E11" width="85" />
+								<mx:TextInput text="{parseFloat(D11.text)*parseFloat(suppObj.E14.text)+parseFloat(suppObj.E16.text)}" editable="false" id="E11" width="85" />
 								<mx:TextInput text="{F10.text}" editable="false" id="F11" width="85" />
 								<mx:TextInput text="{G10.text}" editable="false" id="G11" width="85" />
-								<mx:TextInput text="3.00" editable="false" id="H11" width="104" />
-								<mx:TextInput text="3.00" editable="false" id="I11" width="114" />
+								<mx:TextInput text="{(parseFloat(D11.text)-parseFloat(D9.text))*parseFloat(growerObj.c23.text)}" editable="false" id="H11" width="104" />
+								<mx:TextInput text="{(parseFloat(D11.text)-parseFloat(D9.text))*parseFloat(growerObj.c24.text)}" editable="false" id="I11" width="114" />
 								<mx:TextInput text="{parseInt(F11.text)+parseInt(G11.text)+parseInt(H11.text)+parseInt(I11.text)}" editable="false" id="J11" width="85" />
 								<mx:TextInput text="{parseInt(E11.text)-parseInt(F11.text)-parseInt(G11.text)-parseInt(H11.text)-parseInt(I11.text)}" editable="false" id="K11" width="85" />
 								<mx:TextInput text="{parseInt(J11.text)/parseInt(D11.text)}" editable="false" id="L11" width="85" />
 							</mx:HBox>
 							<mx:HBox>
 								<mx:TextInput text="{parseInt(D11.text)+10}" editable="false" id="D12" width="85" />
-								<mx:TextInput text="1194.60" editable="false" id="E12" width="85" />
+								<mx:TextInput text="{parseFloat(D12.text)*parseFloat(suppObj.E14.text)+parseFloat(suppObj.E16.text)}" editable="false" id="E12" width="85" />
 								<mx:TextInput text="{F11.text}" editable="false" id="F12" width="85" />
 								<mx:TextInput text="{G11.text}" editable="false" id="G12" width="85" />
-								<mx:TextInput text="4.50" editable="false" id="H12" width="104" />
-								<mx:TextInput text="4.50" editable="false" id="I12" width="114" />
+								<mx:TextInput text="{(parseFloat(D12.text)-parseFloat(D9.text)	)*parseFloat(growerObj.c23.text)}" editable="false" id="H12" width="104" />
+								<mx:TextInput text="{(parseFloat(D12.text)-parseFloat(D9.text)	)*parseFloat(growerObj.c24.text)}" editable="false" id="I12" width="114" />
 								<mx:TextInput text="{parseInt(F12.text)+parseInt(G12.text)+parseInt(H12.text)+parseInt(I12.text)}" editable="false" id="J12" width="85" />
 								<mx:TextInput text="{parseInt(E12.text)-parseInt(F12.text)-parseInt(G12.text)-parseInt(H12.text)-parseInt(I12.text)}" editable="false" id="K12" width="85" />
 								<mx:TextInput text="{parseInt(J12.text)/parseInt(D12.text)}" editable="false" id="L12" width="85" />
 							</mx:HBox>
 							<mx:HBox>
 								<mx:TextInput text="{parseInt(D12.text)+10}" editable="false" id="D13" width="85" />
-								<mx:TextInput text="1248.90" editable="false" id="E13" width="85" />
+								<mx:TextInput text="{parseFloat(D13.text)*parseFloat(suppObj.E14.text)+parseFloat(suppObj.E16.text)}" editable="false" id="E13" width="85" />
 								<mx:TextInput text="{F12.text}" editable="false" id="F13" width="85" />
 								<mx:TextInput text="{G12.text}" editable="false" id="G13" width="85" />
-								<mx:TextInput text="6.00" editable="false" id="H13" width="104" />
-								<mx:TextInput text="6.00" editable="false" id="I13" width="114" />
+								<mx:TextInput text="{(parseFloat(D13.text)-parseFloat(D9.text)	)*parseFloat(growerObj.c23.text)}" editable="false" id="H13" width="104" />
+								<mx:TextInput text="{(parseFloat(D13.text)-parseFloat(D9.text)	)*parseFloat(growerObj.c24.text)}" editable="false" id="I13" width="114" />
 								<mx:TextInput text="{parseInt(F13.text)+parseInt(G13.text)+parseInt(H13.text)+parseInt(I13.text)}" editable="false" id="J13" width="85" />
 								<mx:TextInput text="{parseInt(E13.text)-parseInt(F13.text)-parseInt(G13.text)-parseInt(H13.text)-parseInt(I13.text)}" editable="false" id="K13" width="85" />
 								<mx:TextInput text="{parseInt(J13.text)/parseInt(D13.text)}" editable="false" id="L13" width="85" />
 							</mx:HBox>
 							<mx:HBox>
 								<mx:TextInput text="{parseInt(D13.text)+10}" editable="false" id="D14" width="85" />
-								<mx:TextInput text="1303.20" editable="false" id="E14" width="85" />
+								<mx:TextInput text="{parseFloat(D14.text)*parseFloat(suppObj.E14.text)+parseFloat(suppObj.E16.text)}" editable="false" id="E14" width="85" />
 								<mx:TextInput text="{F13.text}" editable="false" id="F14" width="85" />
 								<mx:TextInput text="{G13.text}" editable="false" id="G14" width="85" />
-								<mx:TextInput text="7.50" editable="false" id="H14" width="104" />
-								<mx:TextInput text="7.50" editable="false" id="I14" width="114" />
+								<mx:TextInput text="{(parseFloat(D14.text)-parseFloat(D9.text)	)*parseFloat(growerObj.c23.text)}" editable="false" id="H14" width="104" />
+								<mx:TextInput text="{(parseFloat(D14.text)-parseFloat(D9.text)	)*parseFloat(growerObj.c24.text)}" editable="false" id="I14" width="114" />
 								<mx:TextInput text="{parseInt(F14.text)+parseInt(G14.text)+parseInt(H14.text)+parseInt(I14.text)}" editable="false" id="J14" width="85" />
 								<mx:TextInput text="{parseInt(E14.text)-parseInt(F14.text)-parseInt(G14.text)-parseInt(H14.text)-parseInt(I14.text)}" editable="false" id="K14" width="85" />
 								<mx:TextInput text="{parseInt(J14.text)/parseInt(D14.text)}" editable="false" id="L14" width="85" />
@@ -315,34 +322,35 @@
 										</mx:HBox>
 										<mx:HBox>
 											<mx:Label text="N" id="D27" width="85" />
-											<mx:TextInput text="227" id="E27" editable="false" width="85" />
+											<mx:TextInput text="{parseFloat(suppObj.E36.text)+parseFloat(suppObj.E37.text)+parseFloat(suppObj.E38.text)+parseFloat(suppObj.E39.text)+parseFloat(suppObj.D28.text)+parseFloat(suppObj.D29.text)+parseFloat(suppObj.D30.text)+parseFloat(suppObj.D31.text)}" id="E27" editable="false" width="85" />
 										</mx:HBox>
 										<mx:HBox>
 											<mx:Label text="P" id="D28" width="85" />
-											<mx:TextInput text="96" id="E28" editable="false" width="85" />
+											<mx:TextInput text="{parseFloat(suppObj.F36.text)+parseFloat(suppObj.F37.text)+parseFloat(suppObj.F38.text)+parseFloat(suppObj.F39.text)}" id="E28" editable="false" width="85" />
 										</mx:HBox>
 										<mx:HBox>
 											<mx:Label text="K" id="D29" width="85" />
-											<mx:TextInput text="120" id="E29" editable="false" width="85" />
+											<mx:TextInput text="{parseFloat(suppObj.G36.text)+parseFloat(suppObj.G37.text)+parseFloat(suppObj.G38.text)+parseFloat(suppObj.G39.text)}"  id="E29" editable="false" width="85" />
 										</mx:HBox>
 									</mx:VBox>
 								</mx:Canvas>
+								<mx:Spacer width="50" />
 								<mx:Canvas borderColor="black" borderThickness="2" borderStyle="solid"  width="188" height="116">
 									<mx:VBox y="3" x="3">
 										<mx:HBox>
-											<mx:Label text="Nutrient" id="G26" width="85" />
-											<mx:TextInput text="5.68" id="H26" editable="false" width="85" />
+											<mx:Label text="Corn Futures" id="G26" width="85" />
+											<mx:TextInput text="{suppObj.E9.text}" id="H26" editable="false" width="85" />
 										</mx:HBox>
 										<mx:HBox>
-											<mx:Label text="N" id="G27" width="85" />
-											<mx:TextInput text="830.00" id="H27" editable="false" width="85" />
+											<mx:Label text="NH3 Price" id="G27" width="85" />
+											<mx:TextInput text="{dataObj.E6.text}" id="H27" editable="false" width="85" />
 										</mx:HBox>
 										<mx:HBox>
-											<mx:Label text="P" id="G28" width="85" />
-											<mx:TextInput text="17.82" id="H28" editable="false" width="85" />
+											<mx:Label text="Corn To N ratio" id="G28" width="85" />
+											<mx:TextInput text="{(parseFloat(H27.text)/1640*200)/parseFloat(H26.text)}" id="H28" editable="false" width="85" />
 										</mx:HBox>
 										<mx:HBox>
-											<mx:Label text="K" id="G29" width="85" />
+											<mx:Label text="In the green Zone" id="G29" width="85" />
 											<mx:TextInput text="&lt; 17" id="H29" editable="false" width="85" />
 										</mx:HBox>
 									</mx:VBox>

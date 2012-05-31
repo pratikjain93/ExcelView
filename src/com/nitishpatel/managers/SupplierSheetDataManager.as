@@ -1,7 +1,5 @@
 package com.nitishpatel.managers
 {
-	import com.nitishpatel.models.SupplierMarkerPriceVO;
-	
 	import mx.charts.AreaChart;
 
 	[Bindable]
